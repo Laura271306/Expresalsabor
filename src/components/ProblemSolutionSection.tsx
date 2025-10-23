@@ -42,16 +42,19 @@ const crispSteps = [
 const testimonials = [
   {
     name: "Sofía L.",
+    country: "México 🇲🇽",
     text: "¡Salvó mis cenas entre semana! Mi freidora de aire era solo para papas fritas congeladas. Intenté hacer otras cosas, pero siempre quedaban secas o blandas. Como mamá de dos niños, no tengo tiempo para experimentar y fallar. Este recetario cambió todo. Ahora hago pollo jugoso, vegetales crujientes y hasta postres en menos de 20 minutos. ¡Mi familia está comiendo más sano y delicioso que nunca!",
     avatar: "/placeholder.svg"
   },
   {
     name: "Javier R.",
+    country: "Colombia 🇨🇴",
     text: "Pensé que mi freidora no servía, ¡el que no servía era yo! Estaba a punto de regalar mi Air Fryer. Todo lo que cocinaba era un desastre. Compré este ebook sin mucha fe y ¡wow! El problema no era el aparato, era que no tenía idea de los tiempos y temperaturas. Las instrucciones son súper fáciles de seguir, a prueba de tontos. La semana pasada hice unas alitas de pollo que quedaron mejores que las de mi restaurante favorito.",
     avatar: "/placeholder.svg"
   },
   {
     name: "Isabella G.",
+    country: "Chile 🇨🇱",
     text: "Mucho más que solo papas fritas. Compré la Air Fryer para comer más saludable, pero estaba aburrida de comer siempre lo mismo. Expres al Sabor me abrió un mundo de posibilidades. He probado recetas de pescado, panes, quiches y hasta el pack sin gluten es fantástico. Las recetas son sabrosas y para nada aburridas. Por fin estoy usando mi freidora todos los días y disfrutando mi comida.",
     avatar: "/placeholder.svg"
   }
@@ -82,13 +85,14 @@ const ProblemSolutionSection: React.FC = () => {
         </CtaButton>
       </div>
 
-      <div className="mb-16 md:mb-20">
-        <h3 className="text-2xl md:text-3xl font-serif font-light text-gray-900 text-center mb-10">
-          Lo que dicen nuestros clientes
+      {/* Testimonial Section - Increased prominence */}
+      <div className="mb-16 md:mb-20 p-8 rounded-xl bg-brand-success-bg shadow-inner">
+        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-10">
+          ⭐ Lo que dicen nuestros clientes
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white shadow-md">
+            <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white shadow-lg">
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.avatar}
@@ -100,10 +104,11 @@ const ProblemSolutionSection: React.FC = () => {
                   }}
                 />
                 <div>
-                  <h4 className="font-medium text-gray-900">{testimonial.name}</h4>
+                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                  <p className="text-sm text-gray-500">{testimonial.country}</p>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed text-base">
+              <p className="text-gray-600 leading-relaxed text-base italic">
                 "{testimonial.text}"
               </p>
             </div>
