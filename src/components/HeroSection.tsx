@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-50 pt-12 pb-20">
+    <section className="bg-background dark:bg-gray-50 pt-12 pb-20">
       <div className="container max-w-6xl mx-auto px-6 text-center">
         
         {/* Removed the banner here */}
