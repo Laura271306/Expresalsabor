@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
                 textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
               }}
             >
-              La solución definitiva para activar el <span style={{ color: '#dc2626' }}>"Modo Chef"</span> de tu freidora de aire
+              La solución definitiva para activar el <span style={{ color: '#8B0000' }}>"Modo Chef"</span> de tu freidora de aire
             </span>
           </h1>
           
@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-8">
           <CtaButton className="text-lg px-8 py-4">
             Quiero crocancia hoy (US$ 5,50)
-          </CtaButton>
+          </CtaButton> // Fixed closing tag
           <p className="text-sm text-gray-500 mt-3">
             *Oferta válida por tiempo limitado
           </p>
