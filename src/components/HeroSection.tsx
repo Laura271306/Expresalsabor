@@ -12,10 +12,7 @@ const HeroSection: React.FC = () => {
         <div className="text-center lg:text-left mb-8 md:mb-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 leading-tight max-w-4xl mx-auto lg:mx-0">
             <span 
-              className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
-              style={{ 
-                textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
-              }}
+              className="font-bold text-[var(--color2)]" // Using brand-primary
             >
               La solución definitiva para activar el <span className="text-red-700">"Modo Chef"</span> de tu freidora de aire
             </span>
