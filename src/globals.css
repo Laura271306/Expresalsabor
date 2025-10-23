@@ -49,16 +49,6 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
-
-    /* Nova paleta estratégica */
-    --cta-orange: #FF8A32;
-    --mint-sage: #8EC7A6;
-    --soft-pearl: #FAFAF7;
-    --warm-sand: #F3EFE7;
-    --graphite: #2E2E2E;
-    --cool-grey: #6C6C6C;
-    --mist-line: #E7E7E7;
-    --deep-olive: #2D3A32;
   }
 
   .dark {

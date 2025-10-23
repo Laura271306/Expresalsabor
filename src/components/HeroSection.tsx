@@ -11,10 +11,10 @@ const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              <span className="text-cta-orange">La solución definitiva para activar el "Modo Chef" de tu freidora</span>
+              <span className="text-orange-600">La solución definitiva para activar el "Modo Chef" de tu freidora</span>
             </h1>
             
-            <p className="text-lg text-graphite font-bold">
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">
               El secreto para usar bien tu AirFryer (y no fallar más)
             </p>
 
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
               <FeatureListItem>Menos decisiones: menús y listas de compras</FeatureListItem>
               <FeatureListItem>Acceso Inmediato • Garantía 7 días</FeatureListItem>
               <FeatureListItem>
-                <span className="font-bold text-cta-orange">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+                <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
               </FeatureListItem>
             </div>
 
@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
               <CtaButton>
                 Quiero crocancia hoy (US$ 5,50)
               </CtaButton>
-              <p className="text-xs mt-2 text-cta-orange">
+              <p className="text-xs mt-2 text-red-600">
                 *Oferta válida por tiempo limitado
               </p>
             </div>

@@ -8,11 +8,11 @@ interface SectionWrapperProps {
 }
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, className, bgColor = 'white' }) => {
-  let backgroundClass = 'bg-soft-pearl';
+  let backgroundClass = 'bg-white dark:bg-background';
   if (bgColor === 'light-gray') {
-    backgroundClass = 'bg-warm-sand';
+    backgroundClass = 'bg-gray-50 dark:bg-gray-900';
   } else if (bgColor === 'light-green') {
-    backgroundClass = 'bg-mint-sage/10';
+    backgroundClass = 'bg-green-50 dark:bg-green-950';
   }
 
   return (
