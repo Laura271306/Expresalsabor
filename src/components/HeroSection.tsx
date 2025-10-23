@@ -7,23 +7,28 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16">
       <div className="container max-w-6xl mx-auto px-6">
+        
+        {/* Título Principal (Largura Total) */}
+        <div className="text-center mb-8 md:mb-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 leading-tight">
+            <span 
+              className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
+              style={{ 
+                textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
+              }}
+            >
+              La solución definitiva para activar el <span className="text-red-700">"Modo Chef"</span> de tu freidora de aire
+            </span>
+          </h1>
+        </div>
+
+        {/* Conteúdo Secundário e Imagem (Duas Colunas) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
           {/* Coluna de Conteúdo (Texto e CTA) */}
           <div className="text-center lg:text-left">
             
             <div className="mb-6 md:mb-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-4 md:mb-6 leading-tight">
-                <span 
-                  className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
-                  style={{ 
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
-                  }}
-                >
-                  La solución definitiva para activar el <span className="text-red-700">"Modo Chef"</span> de tu freidora de aire
-                </span>
-              </h1>
-              
               <p className="text-xl md:text-2xl text-gray-600 mb-4 md:mb-6 max-w-3xl mx-auto lg:mx-0 font-bold">
                 El secreto para usar bien tu AirFryer (y no fallar más)
               </p>
