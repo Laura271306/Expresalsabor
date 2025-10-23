@@ -2,7 +2,7 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import CtaButton from './CtaButton';
 import CrispStep from './CrispStep';
-import { Utensils, Clock, ShoppingCart, Star, Thermometer } from 'lucide-react';
+import { Utensils, Clock, ShoppingCart, Star, Thermometer, XCircle } from 'lucide-react';
 
 const problems = [
   "Mi AirFryer deja la comida blanda o seca.",
@@ -59,7 +59,7 @@ const testimonials = [
 
 const ProblemSolutionSection: React.FC = () => {
   return (
-    <SectionWrapper bgColor="white">
+    <SectionWrapper bgColor="light-gray"> {/* Alterado para light-gray */}
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-8 md:mb-10">
           Si te reconoces en esto, este kit es para ti:
@@ -69,9 +69,10 @@ const ProblemSolutionSection: React.FC = () => {
           {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="p-5 border border-gray-200 rounded-lg text-center text-lg bg-white shadow-sm"
+              className="p-5 border-2 border-red-300 rounded-lg text-left text-xl bg-white shadow-lg flex items-start space-x-3" // Aumentando destaque
             >
-              {problem}
+              <XCircle className="w-6 h-6 flex-shrink-0 text-red-600 mt-0.5" />
+              <span className="font-semibold text-gray-800">{problem}</span>
             </div>
           ))}
         </div>
