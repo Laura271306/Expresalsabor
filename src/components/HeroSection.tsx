@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       <div className="container max-w-6xl mx-auto px-6">
         
         {/* Título Principal (Largura Total) */}
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-center md:text-right mb-8 md:mb-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 leading-tight">
             <span 
               className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
