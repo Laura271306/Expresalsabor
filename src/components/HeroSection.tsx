@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            El secreto para usar bien tu AirFryer (y no fallar más)
+            El secreto para usar bem tu AirFryer (y no fallar más)
           </p>
         </div>
 
@@ -31,24 +31,24 @@ const HeroSection: React.FC = () => {
               <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
             </FeatureListItem>
             <FeatureListItem className="text-base">
-              <span className="font-medium">Menos decisiones: menús y listas de compras</span>
+              <span className="font-medium">Menos decisões: menús e listas de compras</span>
             </FeatureListItem>
             <FeatureListItem className="text-base">
-              <span className="font-medium">Acceso Inmediato • Garantía 7 días</span>
+              <span className="font-medium">Acesso Imediato • Garantia 7 dias</span>
             </FeatureListItem>
           </div>
           
           <div className="text-lg text-gray-700 mb-8">
-            <span className="font-bold" style={{ color: '#e58634' }}>600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+            <span className="font-bold" style={{ color: '#e58634' }}>600+ receitas</span> AirFryer por objetivo. Zero ensaio-erro desde o dia 1.
           </div>
         </div>
 
         <div className="mb-8">
           <CtaButton className="text-lg px-8 py-4">
-            Quiero crocancia hoy (US$ 5,50)
-          </CtaButton> // Fixed closing tag
+            Quero crocância hoje (US$ 5,50)
+          </CtaButton>
           <p className="text-sm text-gray-500 mt-3">
-            *Oferta válida por tiempo limitado
+            <span style={{ color: '#8B0000' }}>*Oferta válida por tempo limitado</span>
           </p>
         </div>
 
