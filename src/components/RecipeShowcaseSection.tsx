@@ -30,23 +30,23 @@ const detailedRecipes = [
 const RecipeShowcaseSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
+      <div className="text-center mb-12"> {/* Padronizando mb-12 */}
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
           Cocina 3 platos perfectos hoy mismo:
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8"> {/* Padronizando subtítulo e mb-8 */}
           Sin curva de ensayo-error. Solo sigue los tiempos.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10"> {/* Reduzindo mb-12 para mb-10 */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"> {/* Padronizando mb-12 antes do CTA */}
         {detailedRecipes.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} details={recipe.details} />
         ))}
       </div>
       
       <div className="text-center">
-        <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
+        <CtaButton>
           Comprar ahora
         </CtaButton>
       </div>

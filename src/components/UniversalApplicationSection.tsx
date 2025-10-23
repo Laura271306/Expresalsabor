@@ -25,16 +25,16 @@ const features = [
 const UniversalApplicationSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          <span className="text-brand-primary font-bold">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
+      <div className="text-center mb-12"> {/* Padronizando mb-12 */}
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
+          <span className="text-brand-primary">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8"> {/* Padronizando subtítulo e mb-8 */}
           El Método C.R.I.S.P. funciona con todas las freidoras de aire
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto space-y-6"> {/* Increased space-y for better separation */}
+      <div className="max-w-3xl mx-auto space-y-6 mb-12"> {/* Padronizando mb-12 */}
         {features.map((feature, index) => (
           <div 
             key={index} 

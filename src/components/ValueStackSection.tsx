@@ -20,17 +20,17 @@ const ValueStackSection: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
         
         {/* Coluna de Título e CTA (Esquerda) */}
-        <div className="text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
+        <div className="text-center lg:text-left mb-8 lg:mb-0"> {/* Adicionando mb-8 para mobile */}
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
             Con 2 pedidos de delivery menos por semana
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 mb-6">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8"> {/* Padronizando mb-8 */}
             ahorras <span className="font-extrabold text-brand-secondary">US$ 80–120/mes.</span> 
             <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 6,50</span> y se paga hoy.
           </p>
           
           <div className="text-center lg:text-left">
-            <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
+            <CtaButton>
               Comprar ahora
             </CtaButton>
           </div>
