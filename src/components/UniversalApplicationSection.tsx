@@ -27,7 +27,7 @@ const UniversalApplicationSection: React.FC = () => {
     <SectionWrapper bgColor="light-gray">
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          ¿Tienes dudas? Funciona con CUALQUIER Air Fryer.
+          <span className="text-orange-600">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400">
           O Método C.R.I.S.P. funciona com todas as AirFryer
