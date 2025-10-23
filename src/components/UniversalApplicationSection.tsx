@@ -25,29 +25,33 @@ const features = [
 const UniversalApplicationSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
+      <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          <span className="text-brand-primary">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
+          <span className="text-brand-primary font-bold">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           El Método C.R.I.S.P. funciona con todas las freidoras de aire
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto space-y-4"> {/* Reduzindo space-y-6 para space-y-4 */}
+      <div className="max-w-3xl mx-auto space-y-6"> {/* Increased space-y for better separation */}
         {features.map((feature, index) => (
-          <div key={index} className="p-5 border border-gray-200 rounded-lg shadow-sm"> {/* Reduzindo p-6 para p-5 */}
+          <div 
+            key={index} 
+            className="p-6 border border-gray-200 rounded-xl shadow-md bg-white transition-all duration-300 hover:shadow-lg" // Enhanced styling
+          >
             <FeatureListItem className="text-base">
-              <span className="font-semibold text-gray-900 text-lg">{feature.title}</span> {/* Aumentando título interno para text-lg */}
-              <p className="text-gray-600 mt-1 text-base">{feature.description}</p> {/* Garantindo text-base */}
+              <span className="font-extrabold text-gray-900 text-xl block mb-1">{feature.title}</span> {/* Increased title size and weight */}
+              <p className="text-gray-600 text-base">{feature.description}</p>
             </FeatureListItem>
           </div>
         ))}
       </div>
 
-      <div className="mt-10 p-5 rounded-lg text-center max-w-2xl mx-auto bg-brand-light border border-brand-primary/30"> {/* Reduzindo mt-12 para mt-10 e p-6 para p-5 */}
-        <p className="text-lg font-medium text-gray-800">
-          Compatible con <span className="font-bold">todas las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más
+      <div className="mt-12 p-6 rounded-xl text-center max-w-3xl mx-auto bg-brand-success-bg border-4 border-brand-secondary/50 shadow-inner"> {/* Enhanced styling for callout */}
+        <p className="text-xl font-extrabold text-gray-800 flex items-center justify-center flex-wrap">
+          <Zap className="w-6 h-6 mr-3 text-brand-secondary flex-shrink-0" />
+          Compatible con <span className="font-extrabold text-brand-primary ml-2">TODAS las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más.
         </p>
       </div>
     </SectionWrapper>
