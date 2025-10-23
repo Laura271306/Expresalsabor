@@ -22,6 +22,8 @@ const placeholderImages = [
 ];
 
 const ResultsSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <SectionWrapper bgColor="white">
       <div className="text-center mb-12"> {/* Padronizando mb-12 para o bloco de texto */}
@@ -66,7 +68,7 @@ const ResultsSection: React.FC = () => {
         <p className="font-medium mb-6 text-2xl md:text-3xl font-bold text-brand-primary"> {/* Ajustando mb-6 */}
           600+ recetas como estas te esperan
         </p>
-        <CtaButton>
+        <CtaButton href={ctaLink}>
           Comprar ahora
         </CtaButton>
       </div>

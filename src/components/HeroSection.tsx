@@ -4,6 +4,8 @@ import FeatureListItem from './FeatureListItem';
 import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16">
       <div className="container max-w-6xl mx-auto px-6">
@@ -50,7 +52,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div className="mb-6 text-center lg:text-left">
-              <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
+              <CtaButton href={ctaLink}>
                 Comprar ahora
               </CtaButton>
               <p className="text-sm text-gray-500 mt-2">

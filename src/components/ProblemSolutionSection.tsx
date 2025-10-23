@@ -69,6 +69,8 @@ const testimonials = [
 ];
 
 const ProblemSolutionSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <SectionWrapper bgColor="light-gray">
       <div className="text-center mb-12"> {/* Padronizando mb-12 */}
@@ -88,7 +90,7 @@ const ProblemSolutionSection: React.FC = () => {
           ))}
         </div>
 
-        <CtaButton>
+        <CtaButton href={ctaLink}>
           Comprar ahora
         </CtaButton>
       </div>

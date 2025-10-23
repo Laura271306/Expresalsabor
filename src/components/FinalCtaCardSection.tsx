@@ -5,6 +5,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Lock, Clock } from 'lucide-react';
 
 const FinalCtaCardSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <SectionWrapper bgColor="white">
       <div className="text-center mb-12"> {/* Padronizando mb-12 */}
@@ -21,7 +23,7 @@ const FinalCtaCardSection: React.FC = () => {
           Acceso inmediato y satisfacción garantizada.
         </p>
         
-        <CtaButton className="w-full">
+        <CtaButton className="w-full" href={ctaLink}>
           Comprar ahora
         </CtaButton>
 

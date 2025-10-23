@@ -14,6 +14,7 @@ const valueItems = [
 
 const ValueStackSection: React.FC = () => {
   const totalValue = valueItems.reduce((sum, item) => sum + item.value, 0);
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
 
   return (
     <SectionWrapper bgColor="light-gray">
@@ -30,7 +31,7 @@ const ValueStackSection: React.FC = () => {
           </p>
           
           <div className="text-center lg:text-left">
-            <CtaButton>
+            <CtaButton href={ctaLink}>
               Comprar ahora
             </CtaButton>
           </div>

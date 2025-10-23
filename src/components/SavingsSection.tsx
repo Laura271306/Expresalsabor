@@ -5,6 +5,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Zap, DollarSign, TrendingUp } from 'lucide-react';
 
 const SavingsSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <SectionWrapper bgColor="light-gray">
       <div className="text-center mb-12"> {/* Padronizando mb-12 */}
@@ -66,7 +68,7 @@ const SavingsSection: React.FC = () => {
       </div>
 
       <div className="text-center mt-8">
-        <CtaButton>
+        <CtaButton href={ctaLink}>
           Comprar ahora
         </CtaButton>
       </div>

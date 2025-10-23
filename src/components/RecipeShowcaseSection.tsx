@@ -28,6 +28,8 @@ const detailedRecipes = [
 ];
 
 const RecipeShowcaseSection: React.FC = () => {
+  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
+
   return (
     <SectionWrapper bgColor="light-gray">
       <div className="text-center mb-12"> {/* Padronizando mb-12 */}
@@ -46,7 +48,7 @@ const RecipeShowcaseSection: React.FC = () => {
       </div>
       
       <div className="text-center">
-        <CtaButton>
+        <CtaButton href={ctaLink}>
           Comprar ahora
         </CtaButton>
       </div>
