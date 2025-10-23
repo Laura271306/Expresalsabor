@@ -29,6 +29,10 @@ const HeroSection: React.FC = () => {
               <p className="text-xl md:text-2xl text-gray-600 mb-4 md:mb-6 max-w-3xl mx-auto lg:mx-0 font-bold">
                 El secreto para usar bien tu AirFryer (y no fallar más)
               </p>
+              {/* TEXTO MOVIDO PARA CÁ */}
+              <div className="text-lg md:text-xl text-gray-700 mb-6">
+                <span className="font-bold text-brand-primary">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+              </div>
             </div>
 
             <div className="mb-6 md:mb-8">
@@ -42,10 +46,6 @@ const HeroSection: React.FC = () => {
                 <FeatureListItem className="text-base">
                   <span className="font-medium">Acesso Imediato • Garantía 7 días</span>
                 </FeatureListItem>
-              </div>
-              
-              <div className="text-lg md:text-xl text-gray-700 mb-6">
-                <span className="font-bold text-brand-primary">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
               </div>
             </div>
 
