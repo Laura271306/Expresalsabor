@@ -9,7 +9,7 @@ const FinalCtaCardSection: React.FC = () => {
     <SectionWrapper bgColor="white">
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          <span className="font-bold text-brand-secondary">AirFryer Perfecta</span> – Kit Maestro de Recetas (Edición Premium)
+          <span className="font-bold text-brand-secondary">Expresalsabor</span> – Kit Maestro de Recetas (Edición Premium)
         </h2>
       </div>
 
