@@ -129,7 +129,7 @@ const ProblemSolutionSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6">
           ¿Por qué esto funciona cuando otras recetas fallan?
         </h2>
-        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"> {/* Reduzindo mb-10 para mb-8 */}
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto"> {/* Aumentando o tamanho da fonte aqui */}
           Aplicamos el <span className="font-bold text-brand-primary">Sistema C.R.I.S.P.</span>:
         </p>
 
