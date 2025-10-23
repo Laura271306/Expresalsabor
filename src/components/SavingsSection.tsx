@@ -37,7 +37,7 @@ const SavingsSection: React.FC = () => {
             <Zap className="w-7 h-7 mr-3 text-brand-primary fill-brand-primary/20" />
             <h3 className="text-2xl font-extrabold text-brand-primary">Precio Hoy</h3>
           </div>
-          <p className="text-gray-700 mb-2 text-center text-base">Kit Maestro AirFryer Perfecta (pago único)</p>
+          <p className="text-gray-700 mb-2 text-center text-base">Kit Maestro Expres al Sabor (pago único)</p>
           <p className="text-6xl font-extrabold text-brand-secondary text-center mt-4">
             US$ 5,50
           </p>
