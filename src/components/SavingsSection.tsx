@@ -41,13 +41,13 @@ const SavingsSection: React.FC = () => {
       </Card>
 
       <div className="text-center mb-10">
-        <p className="text-xl md:text-2xl text-gray-700 flex items-center justify-center font-bold p-4 bg-brand-light/50 rounded-lg max-w-xl mx-auto"> {/* Aumentando fonte e adicionando fundo para destaque */}
-          <Zap className="w-6 h-6 mr-2 text-brand-primary" />
+        <p className="text-xl md:text-2xl text-gray-700 flex items-center justify-center font-bold p-6 bg-brand-light/50 rounded-lg max-w-3xl mx-auto"> {/* Aumentando max-w para 3xl e padding para p-6 */}
+          <Zap className="w-6 h-6 mr-2 text-brand-primary flex-shrink-0" />
           Si pides 2 veces/semana (US$ 12–15 por pedido), el kit se paga en el primer día.
         </p>
       </div>
 
-      <div className="text-center mt-8"> {/* Adicionando mt-8 para espaçamento após o destaque */}
+      <div className="text-center mt-8">
         <CtaButton className="text-xl px-10 py-5">
           Comprar ahora
         </CtaButton>
