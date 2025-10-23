@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
                 textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
               }}
             >
-              La solución definitiva para activar el "Modo Chef" de tu freidora de aire
+              La solución definitiva para activar el <span style={{ color: '#dc2626' }}>"Modo Chef"</span> de tu freidora de aire
             </span>
           </h1>
           
