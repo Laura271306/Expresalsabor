@@ -9,6 +9,7 @@ import ValueStackSection from "@/components/ValueStackSection";
 import FinalCtaCardSection from "@/components/FinalCtaCardSection";
 import RiskFreeGuaranteeSection from "@/components/RiskFreeGuaranteeSection";
 import FaqSection from "@/components/FaqSection";
+import CtaFooterSection from "@/components/CtaFooterSection"; // Importar novo componente
 import Footer from "@/components/Footer";
 import TopBanner from "@/components/TopBanner";
 
@@ -28,6 +29,7 @@ const Index = () => {
         <FinalCtaCardSection />
         <RiskFreeGuaranteeSection />
         <FaqSection />
+        <CtaFooterSection /> {/* Adicionar o novo CTA */}
       </main>
       <Footer />
     </div>
