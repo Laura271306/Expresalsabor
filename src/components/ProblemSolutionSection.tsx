@@ -5,10 +5,10 @@ import CrispStep from './CrispStep';
 import { Utensils, Clock, ShoppingCart, Star, Thermometer } from 'lucide-react';
 
 const problems = [
-  "“Mi AirFryer deja la comida blanda o seca.”",
-  "“Paso más tiempo buscando que cocinando.”",
-  "“Repito las mismas 5 recetas y me aburro.”",
-  "“Termino pidiendo delivery entre semana.”",
+  "Mi AirFryer deja la comida blanda o seca.",
+  "Paso más tiempo buscando que cocinando.",
+  "Repito las mismas 5 recetas y me aburro.",
+  "Termino pidiendo delivery entre semana.",
 ];
 
 const crispSteps = [
@@ -39,6 +39,29 @@ const crispSteps = [
   },
 ];
 
+const testimonials = [
+  {
+    name: "María G.",
+    text: "¡Finalmente puedo hacer papas crocantes! Mis hijos ya no piden comida rápida.",
+    avatar: "/placeholder.svg"
+  },
+  {
+    name: "Carlos R.",
+    text: "Paso de 45 minutos a 15 minutos en la cocina. Las tablas de tiempos son oro puro.",
+    avatar: "/placeholder.svg"
+  },
+  {
+    name: "Ana M.",
+    text: "Dejé de repetir las mismas 3 recetas. Ahora tengo variedad y mi familia está feliz.",
+    avatar: "/placeholder.svg"
+  },
+  {
+    name: "Luis P.",
+    text: "Ahorré $80 el primer mes sin pedir delivery. El kit se pagó solo en una semana.",
+    avatar: "/placeholder.svg"
+  }
+];
+
 const ProblemSolutionSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
@@ -63,6 +86,43 @@ const ProblemSolutionSection: React.FC = () => {
           <CtaButton className="w-full sm:w-auto">
             Quiero una solución simple →
           </CtaButton>
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="mt-16">
+        <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
+          Lo que dicen nuestros clientes
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full mr-3"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg";
+                    e.currentTarget.alt = "Avatar placeholder";
+                  }}
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">{testimonial.name}</h4>
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                "{testimonial.text}"
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
