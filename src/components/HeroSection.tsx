@@ -1,0 +1,53 @@
+import React from 'react';
+import CtaButton from './CtaButton';
+import FeatureListItem from './FeatureListItem';
+import { cn } from '@/lib/utils';
+
+const HeroSection: React.FC = () => {
+  return (
+    <section className="bg-amber-50 dark:bg-amber-950 pt-12 pb-16 md:pt-24 md:pb-32">
+      <div className="container max-w-6xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* Left Content */}
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+              Método C.R.I.S.P.: <span className="text-orange-600">crocancia</span> en 10–15 min con tiempos exactos.
+            </h1>
+            <p className="text-lg text-gray-700 dark:text-gray-300">
+              600+ recetas AirFryer por objetivo. <span className="font-bold">Cero ensayo-error desde el día 1.</span>
+            </p>
+            
+            <div className="space-y-3 pt-4">
+              <FeatureListItem>Verás tiempos/temperaturas claros en cada receta</FeatureListItem>
+              <FeatureListItem>Menos decisiones: menús y listas de compras</FeatureListItem>
+              <FeatureListItem>Acceso Inmediato • Garantía 7 días</FeatureListItem>
+            </div>
+
+            <div className="pt-6">
+              <CtaButton>
+                Quiero crocancia hoy (US$ 5,50)
+              </CtaButton>
+              <p className="text-xs mt-2 text-gray-500 dark:text-gray-400">
+                *Oferta válida por tiempo limitado
+              </p>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative mt-8 md:mt-0">
+            <img
+              src="/placeholder.svg" // Placeholder image
+              alt="AirFryer Recipe Book"
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+            <div className="absolute bottom-4 right-4 bg-white p-2 rounded-md shadow-md text-sm font-medium">
+                Tablas de tiempos exactos
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

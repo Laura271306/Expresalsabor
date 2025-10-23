@@ -62,6 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom color for CTA buttons
+        'cta-green': {
+          DEFAULT: 'rgb(102, 153, 0)', // A vibrant olive green
+          dark: 'rgb(85, 128, 0)', // Slightly darker for hover
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
