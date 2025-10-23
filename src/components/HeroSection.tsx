@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       <div className="container max-w-4xl mx-auto px-4 text-center">
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6 leading-tight">
-            La solución definitiva para activar el "Modo Chef" de tu freidora de aire
+            <span style={{ color: '#e58634' }}>La solución definitiva para activar el "Modo Chef" de tu freidora de aire</span>
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
