@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
               La solución definitiva para activar el "Modo Chef" de tu freidora
             </h1>
             
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">
               El secreto para usar bien tu AirFryer (y no fallar más)
             </p>
 
