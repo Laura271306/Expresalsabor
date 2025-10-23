@@ -14,7 +14,6 @@ const HeroSection: React.FC = () => {
               La solución definitiva para activar el "Modo Chef" de tu freidora
             </h1>
             
-            {/* Moved paragraph above button */}
             <p className="text-lg text-gray-700 dark:text-gray-300">
               <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
             </p>
@@ -23,6 +22,9 @@ const HeroSection: React.FC = () => {
               <FeatureListItem>Verás tiempos/temperaturas claros en cada receta</FeatureListItem>
               <FeatureListItem>Menos decisiones: menús y listas de compras</FeatureListItem>
               <FeatureListItem>Acceso Inmediato • Garantía 7 días</FeatureListItem>
+              <FeatureListItem>
+                <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+              </FeatureListItem>
             </div>
 
             <div className="pt-6">
