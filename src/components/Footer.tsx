@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           AirFryer Perfecta – Kit Maestro de Recetas
         </h3>
         <p className="text-lg mb-2 text-gray-600">(Edición Premium)</p>
-        <p className="text-4xl font-light mb-6" style={{ color: '#e58634' }}>
+        <p className="text-4xl font-light mb-6 text-brand-primary">
           US$ 5,50
         </p>
         <p className="text-gray-500 mb-8">acceso inmediato</p>

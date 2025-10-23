@@ -12,7 +12,7 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperature, details }) => {
   return (
-    <Card className="overflow-hidden border border-gray-200">
+    <Card className="overflow-hidden border border-gray-200 shadow-sm">
       <div className="relative h-48 w-full">
         <img
           src={imageSrc}
@@ -31,7 +31,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperat
             <span className="font-medium">Tiempo:</span> {time}
           </div>
           <div className={cn(details && 'text-right')}>
-            <span className="font-medium">Temperatura:</span> <span style={{ color: '#e58634' }} className="font-medium">{temperature}</span>
+            <span className="font-medium">Temperatura:</span> <span className="font-medium text-brand-primary">{temperature}</span>
           </div>
         </div>
       </CardContent>

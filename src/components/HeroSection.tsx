@@ -13,13 +13,12 @@ const HeroSection: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-6 leading-tight">
             <span 
-              className="relative inline-block font-bold"
+              className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
               style={{ 
-                color: '#e58634',
                 textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
               }}
             >
-              La solución definitiva para activar el <span style={{ color: '#8B0000' }}>"Modo Chef"</span> de tu freidora de aire
+              La solución definitiva para activar el <span className="text-red-700">"Modo Chef"</span> de tu freidora de aire
             </span>
           </h1>
           
@@ -42,7 +41,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="text-lg md:text-xl text-gray-700 mb-6">
-            <span className="font-bold" style={{ color: '#e58634' }}>600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+            <span className="font-bold text-brand-primary">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
           </div>
         </div>
 
@@ -51,7 +50,7 @@ const HeroSection: React.FC = () => {
             Quiero crocancia hoy (US$ 5,50)
           </CtaButton>
           <p className="text-sm text-gray-500 mt-2">
-            <span style={{ color: '#8B0000' }}>*Oferta válida por tiempo limitado</span>
+            <span className="text-red-700">*Oferta válida por tiempo limitado</span>
           </p>
         </div>
 
@@ -59,7 +58,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/hero-kit-mockup-recortado.jpg"
             alt="AirFryer Recipe Book"
-            className="w-full max-w-lg mx-auto rounded-lg shadow-md text-center"
+            className="w-full max-w-lg mx-auto rounded-lg shadow-md shadow-brand-primary/30"
           />
         </div>
       </div>

@@ -13,8 +13,8 @@ const FinalCtaCardSection: React.FC = () => {
         </h2>
       </div>
 
-      <Card className="p-12 max-w-sm mx-auto text-center">
-        <p className="text-5xl font-light mb-6" style={{ color: '#e58634' }}>
+      <Card className="p-12 max-w-sm mx-auto text-center shadow-xl">
+        <p className="text-5xl font-light mb-6 text-brand-primary">
           US$ 5,50
         </p>
         <p className="text-gray-600 mb-8">
@@ -27,11 +27,11 @@ const FinalCtaCardSection: React.FC = () => {
 
         <div className="flex justify-center gap-6 text-sm text-gray-600">
           <div className="flex items-center">
-            <Lock className="w-4 h-4 mr-2" style={{ color: '#657a38' }} />
+            <Lock className="w-4 h-4 mr-2 text-brand-secondary" />
             Acceso inmediato
           </div>
           <div className="flex items-center">
-            <Clock className="w-4 h-4 mr-2" style={{ color: '#657a38' }} />
+            <Clock className="w-4 h-4 mr-2 text-brand-secondary" />
             7 días de garantía
           </div>
         </div>

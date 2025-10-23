@@ -27,7 +27,7 @@ const UniversalApplicationSection: React.FC = () => {
     <SectionWrapper bgColor="white">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          <span style={{ color: '#e58634' }}>¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
+          <span className="text-brand-primary">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           El Método C.R.I.S.P. funciona con todas las freidoras de aire
@@ -36,7 +36,7 @@ const UniversalApplicationSection: React.FC = () => {
 
       <div className="max-w-3xl mx-auto space-y-6">
         {features.map((feature, index) => (
-          <div key={index} className="p-6 border border-gray-200 rounded-lg">
+          <div key={index} className="p-6 border border-gray-200 rounded-lg shadow-sm">
             <FeatureListItem className="text-base">
               <span className="font-semibold text-gray-900">{feature.title}</span>
               <p className="text-gray-600 mt-1">{feature.description}</p>
@@ -45,7 +45,7 @@ const UniversalApplicationSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-12 p-6 rounded-lg text-center max-w-2xl mx-auto" style={{ backgroundColor: '#fcbf6b' }}>
+      <div className="mt-12 p-6 rounded-lg text-center max-w-2xl mx-auto bg-brand-light border border-brand-primary/30">
         <p className="text-lg font-medium text-gray-800">
           Compatible con <span className="font-bold">todas las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más
         </p>

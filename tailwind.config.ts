@@ -62,10 +62,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom color for CTA buttons
+        // Custom brand colors using CSS variables
+        'brand-primary': 'var(--color2)', // #e58634 (Laranja escuro/Principal)
+        'brand-secondary': 'var(--color3)', // #657a38 (Verde oliva escuro/Secundário)
+        'brand-light': 'var(--color1)', // #fcbf6b (Laranja claro/Amarelo)
+        'brand-success-bg': 'var(--color5)', // #a9ccb9 (Verde menta claro/Fundo sutil)
         'cta-green': {
-          DEFAULT: 'rgb(102, 153, 0)', // A vibrant olive green
-          dark: 'rgb(85, 128, 0)', // Slightly darker for hover
+          DEFAULT: 'rgb(102, 153, 0)', // Keeping old definition for safety, but using brand-secondary in components
+          dark: 'rgb(85, 128, 0)', 
         },
       },
       borderRadius: {
