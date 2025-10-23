@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "¿Opciones fit/sin gluten?",
-    answer: "Absolutamente. El kit incluye colecciones específicas como 'Veggie, Fit & Sin Gluten' y '15 Postres Fit', ofreciendo opciones saludables y adaptadas a diversas necesidades dietéticas.",
+    answer: "Absolutamente. El kit incluye colecciones específicas como 'Veggie, Fit & Sem Glúten' y '15 Postres Fit', ofreciendo opciones saludables y adaptadas a diversas necesidades dietéticas.",
   },
   {
     question: "¿Cuánto tardo en organizarme?",

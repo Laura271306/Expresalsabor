@@ -11,7 +11,7 @@ const RiskFreeGuaranteeSection: React.FC = () => {
           Pruébalo 7 días sin riesgo.
         </h3>
         <p className="text-gray-600 dark:text-gray-400">
-          Si no te ahorra tiempo o no mejoras la textura, <span className="font-bold text-cta-green">te devolvemos el dinero.</span> Sin preguntas.
+          Si no te ahorra tiempo o no mejoras textura, <span className="font-bold text-cta-green">te devolvemos el dinero.</span> Sin preguntas.
         </p>
       </div>
     </SectionWrapper>
