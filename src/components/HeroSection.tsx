@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              <span className="text-orange-600">La solución definitiva para activar el "Modo Chef" de tu freidora</span>
+              <span className="text-orange-600">La solución definitiva para activar el "Modo Chef" de tu freidora de aire</span>
             </h1>
             
             <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">
