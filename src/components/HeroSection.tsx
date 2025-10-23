@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto font-bold">
             El secreto para usar bien tu AirFryer (y no fallar más)
           </p>
         </div>
