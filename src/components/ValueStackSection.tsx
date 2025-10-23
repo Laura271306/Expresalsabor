@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
+import CtaButton from './CtaButton';
 
 const valueItems = [
   { label: "Colecciones (4)", value: 28 },
@@ -15,38 +16,54 @@ const ValueStackSection: React.FC = () => {
 
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          Con 2 pedidos de delivery menos por semana
-        </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          ahorras <span className="font-bold text-brand-secondary">US$ 80–120/mes.</span> El kit cuesta <span className="font-bold text-brand-primary">US$ 5,50</span> y se paga hoy.
-        </p>
-      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        
+        {/* Coluna de Título e CTA (Esquerda) */}
+        <div className="text-center lg:text-left">
+          <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
+            Con 2 pedidos de delivery menos por semana
+          </h2>
+          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+            ahorras <span className="font-extrabold text-brand-secondary">US$ 80–120/mes.</span> 
+            <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 5,50</span> y se paga hoy.
+          </p>
+          
+          <div className="text-center lg:text-left">
+            <CtaButton className="text-xl px-10 py-5">
+              Quiero ahorrar hoy (US$ 5,50)
+            </CtaButton>
+          </div>
+        </div>
 
-      <Card className="p-8 max-w-sm mx-auto shadow-md">
-        <CardContent className="p-0">
-          <h3 className="text-center font-medium text-gray-700 mb-6">Stack de Valor</h3>
-          <table className="w-full text-left">
-            <tbody>
-              {valueItems.map((item, index) => (
-                <tr key={index} className="border-b border-gray-100 last:border-b-0">
-                  <td className="py-3 text-gray-600">{item.label}</td>
-                  <td className="py-3 text-right text-gray-800">US$ {item.value}</td>
-                </tr>
-              ))}
-              <tr className="border-t border-gray-300 mt-2">
-                <td className="py-3 font-bold text-gray-800">Valor total:</td>
-                <td className="py-3 text-right font-bold text-gray-800">US$ {totalValue}</td>
-              </tr>
-              <tr>
-                <td className="py-3 font-bold text-xl text-brand-primary">Hoy:</td>
-                <td className="py-3 text-right font-bold text-xl text-brand-primary">US$ 5,50</td>
-              </tr>
-            </tbody>
-          </table>
-        </CardContent>
-      </Card>
+        {/* Coluna do Card de Valor (Direita) */}
+        <div className="flex justify-center lg:justify-end">
+          <Card className="p-8 w-full max-w-md lg:max-w-lg shadow-xl border-2 border-brand-primary/50">
+            <CardContent className="p-0">
+              <h3 className="text-center font-bold text-2xl text-gray-700 mb-6">
+                Stack de Valor Total
+              </h3>
+              <table className="w-full text-left">
+                <tbody>
+                  {valueItems.map((item, index) => (
+                    <tr key={index} className="border-b border-gray-100 last:border-b-0">
+                      <td className="py-3 text-lg text-gray-600">{item.label}</td>
+                      <td className="py-3 text-right text-lg font-medium text-gray-800">US$ {item.value}</td>
+                    </tr>
+                  ))}
+                  <tr className="border-t border-gray-300 mt-2">
+                    <td className="py-4 font-bold text-xl text-gray-800">Valor total:</td>
+                    <td className="py-4 text-right font-bold text-xl text-gray-800">US$ {totalValue}</td>
+                  </tr>
+                  <tr className="bg-brand-light/50">
+                    <td className="py-4 font-extrabold text-2xl text-brand-primary">Precio Hoy:</td>
+                    <td className="py-4 text-right font-extrabold text-2xl text-brand-primary">US$ 5,50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
     </SectionWrapper>
   );
 };
