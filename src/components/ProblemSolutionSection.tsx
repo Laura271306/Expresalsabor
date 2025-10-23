@@ -108,7 +108,7 @@ const ProblemSolutionSection: React.FC = () => {
                   <p className="text-sm text-gray-500">{testimonial.country}</p>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed text-base italic">
+              <p className="text-gray-700 leading-relaxed text-base italic">
                 "{testimonial.text}"
               </p>
             </div>
