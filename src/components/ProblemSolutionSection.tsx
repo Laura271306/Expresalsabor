@@ -41,23 +41,18 @@ const crispSteps = [
 
 const testimonials = [
   {
-    name: "María G.",
-    text: "¡Finalmente puedo hacer papas crocantes! Mis hijos ya no piden comida rápida.",
+    name: "Sofía L.",
+    text: "¡Salvó mis cenas entre semana! Mi freidora de aire era solo para papas fritas congeladas. Intenté hacer otras cosas, pero siempre quedaban secas o blandas. Como mamá de dos niños, no tengo tiempo para experimentar y fallar. Este recetario cambió todo. Ahora hago pollo jugoso, vegetales crujientes y hasta postres en menos de 20 minutos. ¡Mi familia está comiendo más sano y delicioso que nunca! Totalmente recomendado.",
     avatar: "/placeholder.svg"
   },
   {
-    name: "Carlos R.",
-    text: "Paso de 45 minutos a 15 minutos en la cocina. Las tablas de tiempos son oro puro.",
+    name: "Javier R.",
+    text: "Pensé que mi freidora no servía, ¡el que no servía era yo! Estaba a punto de regalar mi Air Fryer. Todo lo que cocinaba era un desastre. Compré este ebook sin mucha fe y ¡wow! El problema no era el aparato, era que no tenía idea de los tiempos y temperaturas. Las instrucciones son súper fáciles de seguir, a prueba de tontos. La semana pasada hice unas alitas de pollo que quedaron mejores que las de mi restaurante favorito. ¡Increíble!",
     avatar: "/placeholder.svg"
   },
   {
-    name: "Ana M.",
-    text: "Dejé de repetir las mismas 3 recetas. Ahora tengo variedad y mi familia está feliz.",
-    avatar: "/placeholder.svg"
-  },
-  {
-    name: "Luis P.",
-    text: "Ahorré $80 el primer mes sin pedir delivery. El kit se pagó solo en una semana.",
+    name: "Isabella G.",
+    text: "Mucho más que solo papas fritas. Compré la Air Fryer para comer más saludable, pero estaba aburrida de comer siempre lo mismo. Expres al Sabor me abrió un mundo de posibilidades. He probado recetas de pescado, panes, quiches y hasta el pack sin gluten es fantástico. Las recetas son sabrosas y para nada aburridas. Por fin estoy usando mi freidora todos los días y disfrutando mi comida.",
     avatar: "/placeholder.svg"
   }
 ];
@@ -94,7 +89,7 @@ const ProblemSolutionSection: React.FC = () => {
         <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
           Lo que dicen nuestros clientes
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
