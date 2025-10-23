@@ -32,7 +32,7 @@ const bonusItems = [
 const ProductContentSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
+      <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Todo lo que recibes hoy
         </h2>
@@ -41,47 +41,48 @@ const ProductContentSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-10"> {/* Reduzindo mb-12 para mb-10 */}
-        <Card className="p-6 border-l-4 border-brand-primary shadow-md"> {/* Reduzindo padding do card */}
-          <div className="flex items-center mb-4"> {/* Reduzindo mb-6 para mb-4 */}
-            <div className="p-2 rounded-full text-white mr-3 bg-brand-primary">
-              <Package className="w-5 h-5" />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-10">
+        
+        {/* Card 1: Producto Principal */}
+        <Card className="p-6 border-t-4 border-brand-primary shadow-lg bg-gray-50">
+          <div className="flex items-center mb-6">
+            <div className="p-3 rounded-full text-white mr-4 bg-brand-primary">
+              <Package className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-medium text-gray-900">Producto Principal</h3>
+            <h3 className="text-2xl font-bold text-gray-900">Kit Maestro (600+ Recetas)</h3>
           </div>
-          <div className="space-y-3 text-base"> {/* Garantindo text-base e reduzindo space-y */}
+          <div className="space-y-4">
             {mainProductItems.map((item, index) => (
-              <div key={index} className="flex items-start">
-                <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 bg-brand-primary"></div>
-                <span className="text-gray-700">{item}</span>
-              </div>
+              <FeatureListItem key={index} className="text-base text-left">
+                <span className="font-medium text-gray-800">{item}</span>
+              </FeatureListItem>
             ))}
           </div>
         </Card>
 
-        <Card className="p-6 border-l-4 border-brand-secondary shadow-md"> {/* Reduzindo padding do card */}
-          <div className="flex items-center mb-4"> {/* Reduzindo mb-6 para mb-4 */}
-            <div className="p-2 rounded-full text-white mr-3 bg-brand-secondary">
-              <Gift className="w-5 h-5" />
+        {/* Card 2: Bónus */}
+        <Card className="p-6 border-t-4 border-brand-secondary shadow-lg bg-gray-50">
+          <div className="flex items-center mb-6">
+            <div className="p-3 rounded-full text-white mr-4 bg-brand-secondary">
+              <Gift className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="text-xl font-medium text-gray-900">Bónus y complementos</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Bónus Exclusivos</h3>
               <p className="text-sm text-gray-500">Incluidos por tiempo limitado</p>
             </div>
           </div>
-          <div className="space-y-3 text-base"> {/* Garantindo text-base e reduzindo space-y */}
+          <div className="space-y-4">
             {bonusItems.map((item, index) => (
-              <div key={index} className="flex items-start">
-                <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 bg-brand-secondary"></div>
-                <span className="text-gray-700">{item}</span>
-              </div>
+              <FeatureListItem key={index} className="text-base text-left">
+                <span className="font-medium text-gray-800">{item}</span>
+              </FeatureListItem>
             ))}
           </div>
         </Card>
       </div>
 
       <div className="text-center">
-        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
+        <CtaButton className="text-xl px-10 py-5">
           Comprar ahora
         </CtaButton>
       </div>
