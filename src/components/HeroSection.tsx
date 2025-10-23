@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
               <CtaButton>
                 Quiero crocancia hoy (US$ 5,50)
               </CtaButton>
-              <p className="text-xs mt-2 text-gray-500 dark:text-gray-400">
+              <p className="text-xs mt-2 text-red-600">
                 *Oferta válida por tiempo limitado
               </p>
             </div>
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           {/* Right Image */}
           <div className="relative mt-8 md:md-0">
             <img
-              src="/placeholder.svg" // Placeholder image
+              src="/hero-kit-mockup-recortado.jpg"
               alt="AirFryer Recipe Book"
               className="w-full h-auto rounded-lg shadow-2xl"
             />
