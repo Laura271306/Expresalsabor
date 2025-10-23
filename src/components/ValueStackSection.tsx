@@ -60,8 +60,8 @@ const ValueStackSection: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="bg-brand-light/50">
-                    <td className="py-4 font-extrabold text-2xl text-brand-primary">Precio Hoy:</td>
-                    <td className="py-4 text-right font-extrabold text-2xl text-brand-primary">US$ 5,50</td>
+                    <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td>
+                    <td className="py-4 text-right font-extrabold text-5xl text-brand-secondary">US$ 5,50</td>
                   </tr>
                 </tbody>
               </table>
