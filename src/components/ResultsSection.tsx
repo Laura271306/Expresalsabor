@@ -63,7 +63,7 @@ const ResultsSection: React.FC = () => {
       </div>
       
       <div className="text-center">
-        <p className="font-medium mb-4 text-xl font-bold text-brand-primary">
+        <p className="font-medium mb-4 text-2xl md:text-3xl font-bold text-brand-primary">
           600+ recetas como estas te esperan
         </p>
         <CtaButton className="text-xl px-10 py-5">
