@@ -16,17 +16,12 @@ const mainProductItems = [
 ];
 
 const bonusItems = [
-  "Checklist \"10 Errores que arruinan tus recetas en la Airfryer\"",
-  "15 Postres Fit — dulce sin culpa",
-  "Calendario sencillo de cocina (30 días)",
-  "Guía de Compras Inteligentes / Economía mensual",
-  "Guía Exprés: Limpieza y Mantenimiento",
-  "Mis mejores recetas en freidora de aire",
-  "Receta de la Freidora de Aire / Air Fryer Cookbook",
-  "Libro de cocina AirFryer",
-  "El Libro de Cocina de la Freidora de Aire",
-  "100+ Recetas Airfryer",
-  "100 Deliciosas Recetas",
+  "Checklist: 10 Errores que Arruinan tus recetas en la Airfryer",
+  "Guía de Compras Inteligentes: ¡Revoluciona tus compras y ahorra dinero cada mes!",
+  "Libro de Cocina de la Freidora de Aire para Principiantes: Más de 100 recetas...",
+  "Ebook: ¡Descubre 15 Postres Fit Que Te Permitirán Disfrutar Lo Dulce Sin Culpa!",
+  "Ebook: 30 Recetas de Galletas Sin Gluten",
+  "Ebook: Mis mejores recetas en freidora de aire",
 ];
 
 const ProductContentSection: React.FC = () => {
