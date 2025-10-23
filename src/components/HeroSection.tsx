@@ -13,10 +13,12 @@ const HeroSection: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
               La solución definitiva para activar el "Modo Chef" de tu freidora
             </h1>
-            <p className="text-lg text-gray-700 dark:text-gray-300">
-              600+ recetas AirFryer por objetivo. <span className="font-bold">Cero ensayo-error desde el día 1.</span>
-            </p>
             
+            {/* Moved paragraph above button */}
+            <p className="text-lg text-gray-700 dark:text-gray-300">
+              <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+            </p>
+
             <div className="space-y-3 pt-4">
               <FeatureListItem>Verás tiempos/temperaturas claros en cada receta</FeatureListItem>
               <FeatureListItem>Menos decisiones: menús y listas de compras</FeatureListItem>
