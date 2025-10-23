@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import FaqCtaCard from './FaqCtaCard';
 
 const faqs = [
   {
@@ -41,6 +42,11 @@ const FaqSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Preguntas Frecuentes
         </h2>
+      </div>
+
+      {/* Novo CTA Card adicionado aqui */}
+      <div className="mb-12">
+        <FaqCtaCard />
       </div>
 
       <div className="max-w-3xl mx-auto">
