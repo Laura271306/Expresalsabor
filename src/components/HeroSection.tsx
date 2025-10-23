@@ -7,8 +7,8 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-gray-50 pt-16 pb-24">
       <div className="container max-w-4xl mx-auto px-4 text-center">
-        <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6 leading-tight">
+        <div className="mb-10">
+          <h1 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6 leading-tight">
             <span 
               className="relative inline-block font-bold"
               style={{ 
@@ -21,34 +21,34 @@ const HeroSection: React.FC = () => {
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            El secreto para usar bem tu AirFryer (y no fallar más)
+            El secreto para usar bien tu AirFryer (y no fallar más)
           </p>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-12">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center mb-6">
             <FeatureListItem className="text-base">
               <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
             </FeatureListItem>
             <FeatureListItem className="text-base">
-              <span className="font-medium">Menos decisões: menús e listas de compras</span>
+              <span className="font-medium">Menos decisiones: menús e listas de compras</span>
             </FeatureListItem>
             <FeatureListItem className="text-base">
-              <span className="font-medium">Acesso Imediato • Garantia 7 dias</span>
+              <span className="font-medium">Acesso Imediato • Garantía 7 días</span>
             </FeatureListItem>
           </div>
           
           <div className="text-lg text-gray-700 mb-8">
-            <span className="font-bold" style={{ color: '#e58634' }}>600+ receitas</span> AirFryer por objetivo. Zero ensaio-erro desde o dia 1.
+            <span className="font-bold" style={{ color: '#e58634' }}>600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
           </div>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-10">
           <CtaButton className="text-lg px-8 py-4">
-            Quero crocância hoje (US$ 5,50)
+            Quiero crocancia hoy (US$ 5,50)
           </CtaButton>
           <p className="text-sm text-gray-500 mt-3">
-            <span style={{ color: '#8B0000' }}>*Oferta válida por tempo limitado</span>
+            <span style={{ color: '#8B0000' }}>*Oferta válida por tiempo limitado</span>
           </p>
         </div>
 
