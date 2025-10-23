@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              Método C.R.I.S.P.: <span className="text-orange-600">crocancia</span> en 10–15 min con tiempos exactos.
+              La solución definitiva para activar el "Modo Chef" de tu freidora
             </h1>
             <p className="text-lg text-gray-700 dark:text-gray-300">
               600+ recetas AirFryer por objetivo. <span className="font-bold">Cero ensayo-error desde el día 1.</span>
