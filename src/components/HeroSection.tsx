@@ -5,11 +5,9 @@ import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-background dark:bg-gray-50 pt-10 pb-16 md:pt-12 md:pb-20">
+    <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16"> {/* Reduzindo um pouco o padding inferior */}
       <div className="container max-w-6xl mx-auto px-6 text-center">
         
-        {/* Removed the banner here */}
-
         <div className="mb-6 md:mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-4 md:mb-6 leading-tight">
             <span 
@@ -46,7 +44,6 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="mb-6">
-          {/* Aumentando o tamanho do botão para 2xl e padding vertical para py-6 */}
           <CtaButton className="text-2xl px-12 py-6 font-extrabold">
             Comprar ahora
           </CtaButton>

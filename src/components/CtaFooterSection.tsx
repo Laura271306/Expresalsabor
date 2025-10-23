@@ -19,7 +19,7 @@ const CtaFooterSection: React.FC = () => {
         >
           Empezar ahora
         </CtaButton>
-        <p className="text-sm text-gray-500 mt-3">
+        <p className="text-base text-gray-500 mt-3"> {/* Aumentando text-sm para text-base */}
           Acceso inmediato. Garantía de 7 días.
         </p>
       </div>

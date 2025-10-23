@@ -7,14 +7,14 @@ import { Zap } from 'lucide-react';
 const SavingsSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           El kit se paga solo en el primer día
         </h2>
       </div>
 
-      <Card className="p-8 max-w-md mx-auto mb-8 shadow-md">
-        <CardContent className="p-0">
+      <Card className="p-6 max-w-md mx-auto mb-8 shadow-md"> {/* Reduzindo padding do card */}
+        <CardContent className="p-0 text-base"> {/* Garantindo que o texto da tabela seja text-base */}
           <table className="w-full text-left">
             <thead>
               <tr className="border-b border-gray-200">
@@ -40,7 +40,7 @@ const SavingsSection: React.FC = () => {
         </CardContent>
       </Card>
 
-      <div className="text-center mb-12">
+      <div className="text-center mb-10"> {/* Reduzindo mb-12 para mb-10 */}
         <p className="text-lg text-gray-600 flex items-center justify-center">
           <Zap className="w-5 h-5 mr-2 text-brand-light" />
           Si pides 2 veces/semana (US$ 12–15 por pedido), el kit se paga en el primer día.
@@ -48,7 +48,7 @@ const SavingsSection: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <CtaButton className="text-lg px-8 py-4">
+        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
           Comprar ahora
         </CtaButton>
       </div>

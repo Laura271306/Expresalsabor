@@ -24,7 +24,7 @@ const placeholderImages = [
 const ResultsSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12">
+      <div className="text-center mb-10"> {/* Reduzindo mb-12 para mb-10 */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Esto es lo que puedes lograr con tu AirFryer
         </h2>
@@ -33,7 +33,7 @@ const ResultsSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto mb-10">
+      <div className="relative max-w-4xl mx-auto mb-8"> {/* Reduzindo mb-10 para mb-8 */}
         <Carousel className="w-full">
           <CarouselContent>
             {placeholderImages.map((src, index) => (
@@ -63,10 +63,10 @@ const ResultsSection: React.FC = () => {
       </div>
       
       <div className="text-center">
-        <p className="font-medium mb-6 text-2xl font-bold text-brand-primary">
+        <p className="font-medium mb-4 text-xl font-bold text-brand-primary"> {/* Reduzindo mb-6 para mb-4 e text-2xl para text-xl */}
           600+ recetas como estas te esperan
         </p>
-        <CtaButton className="text-xl px-10 py-5">
+        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
           Comprar ahora
         </CtaButton>
       </div>

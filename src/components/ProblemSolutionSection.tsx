@@ -39,6 +39,14 @@ const crispSteps = [
   },
 ];
 
+const StarRating: React.FC = () => (
+  <div className="flex justify-center mb-3">
+    {[...Array(5)].map((_, i) => (
+      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+    ))}
+  </div>
+);
+
 const testimonials = [
   {
     name: "Sofía L.",
@@ -60,27 +68,19 @@ const testimonials = [
   }
 ];
 
-const StarRating: React.FC = () => (
-  <div className="flex justify-center mb-3">
-    {[...Array(5)].map((_, i) => (
-      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-    ))}
-  </div>
-);
-
 const ProblemSolutionSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray"> {/* Alterado para light-gray */}
-      <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-8 md:mb-10">
+      <div className="text-center mb-10 md:mb-12"> {/* Reduzindo espaçamento */}
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6 md:mb-8"> {/* Reduzindo espaçamento */}
           Si te reconoces en esto, este kit es para ti:
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-6"> {/* Reduzindo mb-8 para mb-6 */}
           {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="p-5 border-2 border-red-300 rounded-lg text-left text-xl bg-white shadow-lg flex items-start space-x-3" // Aumentando destaque
+              className="p-4 border-2 border-red-300 rounded-lg text-left text-lg bg-white shadow-lg flex items-start space-x-3" // Reduzindo p-5 para p-4 e text-xl para text-lg
             >
               <XCircle className="w-6 h-6 flex-shrink-0 text-red-600 mt-0.5" />
               <span className="font-semibold text-gray-800">{problem}</span>
@@ -88,19 +88,19 @@ const ProblemSolutionSection: React.FC = () => {
           ))}
         </div>
 
-        <CtaButton className="text-xl px-10 py-5">
+        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
           Comprar ahora
         </CtaButton>
       </div>
 
       {/* Testimonial Section - Increased prominence */}
-      <div className="mb-16 md:mb-20 p-8 rounded-xl bg-brand-success-bg shadow-inner">
-        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-10">
+      <div className="mb-12 md:mb-16 p-6 rounded-xl bg-brand-success-bg shadow-inner"> {/* Reduzindo espaçamento e padding */}
+        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-8"> {/* Reduzindo mb-10 para mb-8 */}
           Lo que dicen nuestros clientes
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white shadow-lg">
+            <div key={index} className="p-5 border border-gray-200 rounded-lg bg-white shadow-lg"> {/* Reduzindo p-6 para p-5 */}
               <StarRating /> {/* Adicionando as 5 estrelas */}
               <div className="flex items-center mb-4">
                 <img
@@ -125,22 +125,22 @@ const ProblemSolutionSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center mb-16 md:mb-20">
+      <div className="text-center mb-12 md:mb-16"> {/* Reduzindo espaçamento */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6">
           ¿Por qué esto funciona cuando otras recetas fallan?
         </h2>
-        <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"> {/* Reduzindo mb-10 para mb-8 */}
           Aplicamos el <span className="font-bold text-brand-primary">Sistema C.R.I.S.P.</span>:
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto"> {/* Reduzindo gap-6 para gap-4 */}
           {crispSteps.map((step, index) => (
             <CrispStep key={index} {...step} />
           ))}
         </div>
       </div>
 
-      <div className="p-6 border border-brand-secondary/30 rounded-lg text-center max-w-2xl mx-auto bg-brand-success-bg">
+      <div className="p-5 border border-brand-secondary/30 rounded-lg text-center max-w-2xl mx-auto bg-brand-success-bg"> {/* Reduzindo p-6 para p-5 */}
         <p className="text-lg font-medium text-gray-800">
           Resultado: platos listos en <span className="font-bold text-brand-primary">10–15 min</span>, incluso si eres principiante.
         </p>

@@ -17,20 +17,20 @@ const ValueStackSection: React.FC = () => {
 
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto"> {/* Reduzindo gap-12 para gap-10 */}
         
         {/* Coluna de Título e CTA (Esquerda) */}
         <div className="text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
             Con 2 pedidos de delivery menos por semana
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-gray-600 mb-6"> {/* Reduzindo mb-8 para mb-6 */}
             ahorras <span className="font-extrabold text-brand-secondary">US$ 80–120/mes.</span> 
             <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 5,50</span> y se paga hoy.
           </p>
           
           <div className="text-center lg:text-left">
-            <CtaButton className="text-xl px-10 py-5">
+            <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
               Comprar ahora
             </CtaButton>
           </div>
@@ -38,30 +38,30 @@ const ValueStackSection: React.FC = () => {
 
         {/* Coluna do Card de Valor (Direita) */}
         <div className="flex justify-center lg:justify-end">
-          <Card className="p-8 w-full max-w-md lg:max-w-lg shadow-xl border-2 border-brand-primary/50">
+          <Card className="p-6 w-full max-w-md lg:max-w-lg shadow-xl border-2 border-brand-primary/50"> {/* Reduzindo p-8 para p-6 */}
             <CardContent className="p-0">
-              <h3 className="text-center font-bold text-2xl text-gray-700 mb-6">
+              <h3 className="text-center font-bold text-2xl text-gray-700 mb-4"> {/* Reduzindo mb-6 para mb-4 */}
                 Stack de Valor Total
               </h3>
               <table className="w-full text-left">
                 <tbody>
                   {valueItems.map((item, index) => (
                     <tr key={index} className="border-b border-gray-100 last:border-b-0">
-                      <td className="py-3 text-lg text-gray-600">{item.label}</td>
-                      <td className="py-3 text-right text-lg font-medium text-red-700">US$ {item.value}</td>
+                      <td className="py-2 text-lg text-gray-600">{item.label}</td> {/* Reduzindo py-3 para py-2 */}
+                      <td className="py-2 text-right text-lg font-medium text-red-700">US$ {item.value}</td> {/* Reduzindo py-3 para py-2 */}
                     </tr>
                   ))}
                   <tr className="border-t border-gray-300 mt-2">
-                    <td className="py-4 font-bold text-xl text-gray-800">Valor total:</td>
-                    <td className="py-4 text-right">
-                      <span className={cn("text-4xl font-extrabold line-through text-gray-500")}>
+                    <td className="py-3 font-bold text-xl text-gray-800">Valor total:</td> {/* Reduzindo py-4 para py-3 */}
+                    <td className="py-3 text-right"> {/* Reduzindo py-4 para py-3 */}
+                      <span className={cn("text-3xl font-extrabold line-through text-gray-500")}> {/* Reduzindo text-4xl para text-3xl */}
                         US$ {totalValue}
                       </span>
                     </td>
                   </tr>
                   <tr className="bg-brand-light/50">
-                    <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td>
-                    <td className="py-4 text-right font-extrabold text-5xl text-brand-secondary">US$ 5,50</td>
+                    <td className="py-3 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td> {/* Reduzindo py-4 para py-3 */}
+                    <td className="py-3 text-right font-extrabold text-4xl text-brand-secondary">US$ 5,50</td> {/* Reduzindo py-4 para py-3 e text-5xl para text-4xl */}
                   </tr>
                 </tbody>
               </table>

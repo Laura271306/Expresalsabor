@@ -7,25 +7,25 @@ import { Lock, Clock } from 'lucide-react';
 const FinalCtaCardSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-10">
+      <div className="text-center mb-8"> {/* Reduzindo mb-10 para mb-8 */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           <span className="font-bold text-brand-secondary">Expres al Sabor</span> – Kit Maestro de Recetas (Edición Premium)
         </h2>
       </div>
 
-      <Card className="p-10 md:p-12 max-w-lg mx-auto text-center shadow-xl border-2 border-brand-primary/50">
-        <p className="text-6xl font-extrabold mb-6 text-brand-primary">
+      <Card className="p-8 md:p-10 max-w-lg mx-auto text-center shadow-xl border-2 border-brand-primary/50"> {/* Reduzindo padding */}
+        <p className="text-5xl md:text-6xl font-extrabold mb-4 text-brand-primary"> {/* Reduzindo mb-6 para mb-4 */}
           US$ 5,50
         </p>
-        <p className="text-gray-600 mb-8 text-xl font-medium">
+        <p className="text-lg md:text-xl text-gray-600 mb-6 font-medium"> {/* Reduzindo mb-8 para mb-6 */}
           Acceso inmediato y satisfacción garantizada.
         </p>
         
-        <CtaButton className="text-2xl w-full py-6 font-extrabold mb-8">
+        <CtaButton className="text-2xl w-full py-6 font-extrabold mb-6"> {/* Mantendo o tamanho máximo e reduzindo mb-8 para mb-6 */}
           Comprar ahora
         </CtaButton>
 
-        <div className="flex justify-center gap-6 text-sm text-gray-600">
+        <div className="flex justify-center gap-6 text-base text-gray-600"> {/* Aumentando text-sm para text-base */}
           <div className="flex items-center">
             <Lock className="w-4 h-4 mr-2 text-brand-secondary" />
             Acceso inmediato

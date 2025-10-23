@@ -30,7 +30,7 @@ const detailedRecipes = [
 const RecipeShowcaseSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Cocina 3 platos perfectos hoy mismo:
         </h2>
@@ -39,14 +39,14 @@ const RecipeShowcaseSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10"> {/* Reduzindo mb-12 para mb-10 */}
         {detailedRecipes.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} details={recipe.details} />
         ))}
       </div>
       
       <div className="text-center">
-        <CtaButton className="text-lg px-8 py-4">
+        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
           Comprar ahora
         </CtaButton>
       </div>

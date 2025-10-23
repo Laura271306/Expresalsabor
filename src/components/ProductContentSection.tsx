@@ -32,7 +32,7 @@ const bonusItems = [
 const ProductContentSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12"> {/* Reduzindo mb-16 para mb-12 */}
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Todo lo que recibes hoy
         </h2>
@@ -41,15 +41,15 @@ const ProductContentSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-        <Card className="p-8 border-l-4 border-brand-primary shadow-md">
-          <div className="flex items-center mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-10"> {/* Reduzindo mb-12 para mb-10 */}
+        <Card className="p-6 border-l-4 border-brand-primary shadow-md"> {/* Reduzindo padding do card */}
+          <div className="flex items-center mb-4"> {/* Reduzindo mb-6 para mb-4 */}
             <div className="p-2 rounded-full text-white mr-3 bg-brand-primary">
               <Package className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-medium text-gray-900">Producto Principal</h3>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3 text-base"> {/* Garantindo text-base e reduzindo space-y */}
             {mainProductItems.map((item, index) => (
               <div key={index} className="flex items-start">
                 <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 bg-brand-primary"></div>
@@ -59,8 +59,8 @@ const ProductContentSection: React.FC = () => {
           </div>
         </Card>
 
-        <Card className="p-8 border-l-4 border-brand-secondary shadow-md">
-          <div className="flex items-center mb-6">
+        <Card className="p-6 border-l-4 border-brand-secondary shadow-md"> {/* Reduzindo padding do card */}
+          <div className="flex items-center mb-4"> {/* Reduzindo mb-6 para mb-4 */}
             <div className="p-2 rounded-full text-white mr-3 bg-brand-secondary">
               <Gift className="w-5 h-5" />
             </div>
@@ -69,7 +69,7 @@ const ProductContentSection: React.FC = () => {
               <p className="text-sm text-gray-500">Incluidos por tiempo limitado</p>
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3 text-base"> {/* Garantindo text-base e reduzindo space-y */}
             {bonusItems.map((item, index) => (
               <div key={index} className="flex items-start">
                 <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 bg-brand-secondary"></div>
@@ -81,7 +81,7 @@ const ProductContentSection: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <CtaButton className="text-lg px-8 py-4">
+        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
           Comprar ahora
         </CtaButton>
       </div>
