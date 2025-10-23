@@ -4,8 +4,6 @@ import CtaButton from './CtaButton';
 import { cn } from '@/lib/utils';
 
 const CtaFooterSection: React.FC = () => {
-  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
-
   return (
     <SectionWrapper bgColor="light-gray" className="py-10 md:py-12 border-t border-gray-200">
       <div className="text-center max-w-3xl mx-auto">
@@ -13,7 +11,6 @@ const CtaFooterSection: React.FC = () => {
           <span className="font-bold text-brand-secondary">Listo para transformar tu Air Fryer?</span>
         </h2>
         <CtaButton 
-          href={ctaLink}
           className={cn(
             // Custom style for 'vermelho vinho' button
             "bg-red-700 hover:bg-red-800 transition-colors duration-200"

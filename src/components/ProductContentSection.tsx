@@ -25,20 +25,18 @@ const bonusItems = [
 ];
 
 const ProductContentSection: React.FC = () => {
-  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
-
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12"> {/* Padronizando mb-12 */}
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Todo lo que recibes hoy
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8"> {/* Padronizando subtítulo e mb-8 */}
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Acceso inmediato a todo el contenido digital
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12"> {/* Padronizando mb-12 antes do CTA */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-10">
         
         {/* Card 1: Producto Principal */}
         <Card className="p-6 border-t-4 border-brand-primary shadow-lg bg-gray-50">
@@ -79,7 +77,7 @@ const ProductContentSection: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <CtaButton href={ctaLink}>
+        <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>
       </div>

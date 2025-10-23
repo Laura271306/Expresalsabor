@@ -37,8 +37,8 @@ const faqs = [
 const FaqSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12"> {/* Padronizando mb-12 */}
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Preguntas Frecuentes
         </h2>
       </div>

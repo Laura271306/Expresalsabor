@@ -22,20 +22,18 @@ const placeholderImages = [
 ];
 
 const ResultsSection: React.FC = () => {
-  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
-
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12"> {/* Padronizando mb-12 para o bloco de texto */}
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Esto es lo que puedes lograr con tu AirFryer
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Resultados reales, crocancia perfecta en minutos
         </p>
       </div>
 
-      <div className="relative max-w-6xl mx-auto mb-12"> {/* Padronizando mb-12 antes do CTA final */}
+      <div className="relative max-w-6xl mx-auto mb-8"> {/* Aumentando max-w para 6xl */}
         <Carousel className="w-full">
           <CarouselContent className="-ml-2"> {/* Ajustando margem negativa para melhor espaçamento */}
             {placeholderImages.map((src, index) => (
@@ -65,10 +63,10 @@ const ResultsSection: React.FC = () => {
       </div>
       
       <div className="text-center">
-        <p className="font-medium mb-6 text-2xl md:text-3xl font-bold text-brand-primary"> {/* Ajustando mb-6 */}
+        <p className="font-medium mb-4 text-2xl md:text-3xl font-bold text-brand-primary">
           600+ recetas como estas te esperan
         </p>
-        <CtaButton href={ctaLink}>
+        <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>
       </div>

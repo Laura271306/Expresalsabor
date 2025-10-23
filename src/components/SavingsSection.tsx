@@ -5,15 +5,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Zap, DollarSign, TrendingUp } from 'lucide-react';
 
 const SavingsSection: React.FC = () => {
-  const ctaLink = "https://pay.kiwify.com/0h3yyq8";
-
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-12"> {/* Padronizando mb-12 */}
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4"> {/* Usando font-bold para consistência */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           El kit se paga solo en el primer día
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8"> {/* Padronizando subtítulo e mb-8 */}
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Compara el costo de seguir pidiendo delivery vs. tener el Kit Maestro.
         </p>
       </div>
@@ -68,7 +66,7 @@ const SavingsSection: React.FC = () => {
       </div>
 
       <div className="text-center mt-8">
-        <CtaButton href={ctaLink}>
+        <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>
       </div>
