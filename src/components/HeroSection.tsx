@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
             </h1>
             
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+              El secreto para usar bien tu AirFryer (y no fallar más)
             </p>
 
             <div className="space-y-3 pt-4">
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative mt-8 md:mt-0">
+          <div className="relative mt-8 md:md-0">
             <img
               src="/placeholder.svg" // Placeholder image
               alt="AirFryer Recipe Book"
