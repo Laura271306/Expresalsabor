@@ -5,13 +5,13 @@ import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-background dark:bg-gray-50 pt-12 pb-20">
+    <section className="bg-background dark:bg-gray-50 pt-10 pb-16 md:pt-12 md:pb-20">
       <div className="container max-w-6xl mx-auto px-6 text-center">
         
         {/* Removed the banner here */}
 
-        <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-6 leading-tight">
+        <div className="mb-6 md:mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-4 md:mb-6 leading-tight">
             <span 
               className="relative inline-block font-bold text-[var(--color2)]" // Using brand-primary
               style={{ 
@@ -22,12 +22,12 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto font-bold">
+          <p className="text-xl md:text-2xl text-gray-600 mb-4 md:mb-6 max-w-3xl mx-auto font-bold">
             El secreto para usar bien tu AirFryer (y no fallar más)
           </p>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-6 md:mb-8">
           <div className="flex flex-col sm:flex-row gap-3 items-center justify-center mb-4">
             <FeatureListItem className="text-base">
               <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
@@ -46,7 +46,8 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="mb-6">
-          <CtaButton className="text-lg px-10 py-5 text-xl">
+          {/* Aumentando o tamanho do botão para 2xl e padding vertical para py-6 */}
+          <CtaButton className="text-2xl px-12 py-6 font-extrabold">
             Quiero crocancia hoy (US$ 5,50)
           </CtaButton>
           <p className="text-sm text-gray-500 mt-2">
@@ -54,7 +55,7 @@ const HeroSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-6">
           <img
             src="/hero-kit-mockup-recortado.jpg"
             alt="AirFryer Recipe Book"

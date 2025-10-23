@@ -60,32 +60,32 @@ const testimonials = [
 const ProblemSolutionSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-12">
+      <div className="text-center mb-12 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-8 md:mb-10">
           Si te reconoces en esto, este kit es para ti:
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8">
           {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="p-6 border border-gray-200 rounded-lg text-center text-lg bg-white shadow-sm"
+              className="p-5 border border-gray-200 rounded-lg text-center text-lg bg-white shadow-sm"
             >
               {problem}
             </div>
           ))}
         </div>
 
-        <CtaButton className="text-lg px-8 py-4">
+        <CtaButton className="text-xl px-10 py-5">
           Quiero una solución simple →
         </CtaButton>
       </div>
 
-      <div className="mb-20">
-        <h3 className="text-2xl md:text-3xl font-serif font-light text-gray-900 text-center mb-12">
+      <div className="mb-16 md:mb-20">
+        <h3 className="text-2xl md:text-3xl font-serif font-light text-gray-900 text-center mb-10">
           Lo que dicen nuestros clientes
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white shadow-md">
               <div className="flex items-center mb-4">
@@ -102,7 +102,7 @@ const ProblemSolutionSection: React.FC = () => {
                   <h4 className="font-medium text-gray-900">{testimonial.name}</h4>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-base">
                 "{testimonial.text}"
               </p>
             </div>
@@ -110,15 +110,15 @@ const ProblemSolutionSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center mb-20">
-        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-8">
+      <div className="text-center mb-16 md:mb-20">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6">
           ¿Por qué esto funciona cuando otras recetas fallan?
         </h2>
-        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
           Aplicamos el <span className="font-bold text-brand-primary">Sistema C.R.I.S.P.</span>:
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
           {crispSteps.map((step, index) => (
             <CrispStep key={index} {...step} />
           ))}

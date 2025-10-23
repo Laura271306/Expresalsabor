@@ -11,7 +11,8 @@ const CtaButton: React.FC<CtaButtonProps> = ({ children, className, ...props }) 
   return (
     <Button
       className={cn(
-        "bg-brand-secondary text-white hover:bg-brand-secondary/90 transition-colors duration-200 text-lg font-bold py-4 px-10 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105",
+        // Aumentando o padding base e garantindo font-bold
+        "bg-brand-secondary text-white hover:bg-brand-secondary/90 transition-colors duration-200 text-xl font-extrabold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105",
         className
       )}
       {...props}

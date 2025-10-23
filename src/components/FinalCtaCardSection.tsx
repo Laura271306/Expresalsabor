@@ -7,21 +7,21 @@ import { Lock, Clock } from 'lucide-react';
 const FinalCtaCardSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-12">
+      <div className="text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-serif font-light text-gray-900 mb-4">
           AirFryer Perfecta – Kit Maestro de Recetas (Edición Premium)
         </h2>
       </div>
 
-      <Card className="p-12 max-w-sm mx-auto text-center shadow-xl">
+      <Card className="p-10 md:p-12 max-w-sm mx-auto text-center shadow-xl">
         <p className="text-5xl font-light mb-6 text-brand-primary">
           US$ 5,50
         </p>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 text-lg">
           Acceso inmediato y actualizaciones del kit.
         </p>
         
-        <CtaButton className="text-lg px-8 py-4 mb-8">
+        <CtaButton className="text-2xl px-12 py-6 font-extrabold mb-8">
           Quiero mis recetas ahora (US$ 5,50)
         </CtaButton>
 

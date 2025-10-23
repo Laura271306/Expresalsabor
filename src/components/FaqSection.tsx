@@ -37,7 +37,7 @@ const faqs = [
 const FaqSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Preguntas Frecuentes
         </h2>
@@ -45,12 +45,12 @@ const FaqSection: React.FC = () => {
 
       <div className="max-w-3xl mx-auto">
         {faqs.map((faq, index) => (
-          <Accordion key={index} type="single" collapsible className="mb-4">
+          <Accordion key={index} type="single" collapsible className="mb-3">
             <AccordionItem value={`item-${index}`} className="border border-gray-200 rounded-lg">
               <AccordionTrigger className="px-6 py-4 text-left font-medium text-gray-900 hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-gray-600">
+              <AccordionContent className="px-6 pb-4 text-gray-600 text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

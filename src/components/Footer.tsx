@@ -4,7 +4,7 @@ import CtaButton from './CtaButton';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-50">
-      <div className="py-16 text-center">
+      <div className="py-12 md:py-16 text-center">
         <h3 className="text-2xl md:text-3xl font-serif font-light text-gray-900 mb-2">
           AirFryer Perfecta – Kit Maestro de Recetas
         </h3>
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         </p>
         <p className="text-gray-500 mb-8">acceso inmediato</p>
         
-        <CtaButton className="text-lg px-8 py-4 mb-8">
+        <CtaButton className="text-2xl px-12 py-6 font-extrabold mb-8">
           Sí, quiero cocinar mejor hoy
         </CtaButton>
       </div>
