@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div className="mb-6 text-center lg:text-left">
-              <CtaButton className="text-2xl px-12 py-6 font-extrabold">
+              <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
                 Comprar ahora
               </CtaButton>
               <p className="text-sm text-gray-500 mt-2">

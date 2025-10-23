@@ -30,7 +30,7 @@ const ValueStackSection: React.FC = () => {
           </p>
           
           <div className="text-center lg:text-left">
-            <CtaButton className="text-xl px-10 py-5">
+            <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
               Comprar ahora
             </CtaButton>
           </div>

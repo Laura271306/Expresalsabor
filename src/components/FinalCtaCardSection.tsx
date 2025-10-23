@@ -21,11 +21,11 @@ const FinalCtaCardSection: React.FC = () => {
           Acceso inmediato y satisfacción garantizada.
         </p>
         
-        <CtaButton className="text-2xl w-full py-6 font-extrabold mb-6"> {/* Mantendo o tamanho máximo e reduzindo mb-8 para mb-6 */}
+        <CtaButton className="w-full"> {/* Removendo classes de tamanho, usando o padrão grande e garantindo w-full */}
           Comprar ahora
         </CtaButton>
 
-        <div className="flex justify-center gap-6 text-base text-gray-600"> {/* Aumentando text-sm para text-base */}
+        <div className="flex justify-center gap-6 text-base text-gray-600 mt-6"> {/* Adicionando mt-6 para espaçamento */}
           <div className="flex items-center">
             <Lock className="w-4 h-4 mr-2 text-brand-secondary" />
             Acceso inmediato

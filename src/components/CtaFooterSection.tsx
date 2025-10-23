@@ -12,7 +12,7 @@ const CtaFooterSection: React.FC = () => {
         </h2>
         <CtaButton 
           className={cn(
-            "text-2xl px-12 py-6 font-extrabold",
+            "text-2xl px-12 py-6 font-extrabold", // Mantendo classes de tamanho explícitas para garantir o override se necessário, mas o CtaButton base já é grande.
             // Custom style for 'vermelho vinho' button
             "bg-red-700 hover:bg-red-800 transition-colors duration-200"
           )}

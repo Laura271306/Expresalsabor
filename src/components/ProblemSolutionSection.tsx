@@ -88,7 +88,7 @@ const ProblemSolutionSection: React.FC = () => {
           ))}
         </div>
 
-        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
+        <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>
       </div>
