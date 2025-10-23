@@ -5,49 +5,51 @@ import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-amber-50 dark:bg-amber-950 pt-12 pb-16 md:pt-24 md:pb-32">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Left Content */}
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              <span className="text-orange-600">La solución definitiva para activar el "Modo Chef" de tu freidora de aire</span>
-            </h1>
-            
-            <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">
-              El secreto para usar bien tu AirFryer (y no fallar más)
-            </p>
+    <section className="bg-white dark:bg-gray-50 pt-16 pb-24">
+      <div className="container max-w-4xl mx-auto px-4 text-center">
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6 leading-tight">
+            La solución definitiva para activar el "Modo Chef" de tu freidora de aire
+          </h1>
+          
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            El secreto para usar bien tu AirFryer (y no fallar más)
+          </p>
+        </div>
 
-            <div className="space-y-3 pt-4">
-              <FeatureListItem>Verás tiempos/temperaturas claros en cada receta</FeatureListItem>
-              <FeatureListItem>Menos decisiones: menús y listas de compras</FeatureListItem>
-              <FeatureListItem>Acceso Inmediato • Garantía 7 días</FeatureListItem>
-              <FeatureListItem>
-                <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
-              </FeatureListItem>
-            </div>
-
-            <div className="pt-6">
-              <CtaButton>
-                Quiero crocancia hoy (US$ 5,50)
-              </CtaButton>
-              <p className="text-xs mt-2 text-red-600">
-                *Oferta válida por tiempo limitado
-              </p>
-            </div>
+        <div className="mb-10">
+          <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center mb-6">
+            <FeatureListItem className="text-base">
+              <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
+            </FeatureListItem>
+            <FeatureListItem className="text-base">
+              <span className="font-medium">Menos decisiones: menús y listas de compras</span>
+            </FeatureListItem>
+            <FeatureListItem className="text-base">
+              <span className="font-medium">Acceso Inmediato • Garantía 7 días</span>
+            </FeatureListItem>
           </div>
-
-          {/* Right Image */}
-          <div className="relative mt-8 md:md-0">
-            <img
-              src="/hero-kit-mockup-recortado.jpg"
-              alt="AirFryer Recipe Book"
-              className="w-full h-auto rounded-lg shadow-2xl"
-            />
-            <div className="absolute bottom-4 right-4 bg-white p-2 rounded-md shadow-md text-sm font-medium">
-                Tablas de tiempos exactos
-            </div>
+          
+          <div className="text-lg text-gray-700 mb-8">
+            <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
           </div>
+        </div>
+
+        <div className="mb-8">
+          <CtaButton className="text-lg px-8 py-4">
+            Quiero crocancia hoy (US$ 5,50)
+          </CtaButton>
+          <p className="text-sm text-gray-500 mt-3">
+            *Oferta válida por tiempo limitado
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <img
+            src="/hero-kit-mockup-recortado.jpg"
+            alt="AirFryer Recipe Book"
+            className="w-full max-w-md mx-auto rounded-lg shadow-md"
+          />
         </div>
       </div>
     </section>

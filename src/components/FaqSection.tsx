@@ -36,25 +36,27 @@ const faqs = [
 
 const FaqSection: React.FC = () => {
   return (
-    <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
+    <SectionWrapper bgColor="white">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Preguntas Frecuentes
         </h2>
       </div>
 
-      <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {faqs.map((faq, index) => (
-          <AccordionItem key={index} value={`item-${index}`} className="bg-white px-4 rounded-lg shadow-sm mb-3 border-none">
-            <AccordionTrigger className="text-lg font-medium hover:no-underline">
-              {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-gray-600 dark:text-gray-400 p-4 pt-0">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
+          <Accordion key={index} type="single" collapsible className="mb-4">
+            <AccordionItem value={`item-${index}`} className="border border-gray-200 rounded-lg">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-gray-900 hover:no-underline">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-4 text-gray-600">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         ))}
-      </Accordion>
+      </div>
     </SectionWrapper>
   );
 };

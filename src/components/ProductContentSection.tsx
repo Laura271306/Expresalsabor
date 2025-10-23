@@ -32,61 +32,56 @@ const bonusItems = [
 const ProductContentSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Todo lo que recibes hoy
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Acceso inmediato a todo el contenido digital
         </p>
       </div>
 
-      {/* Main Product Card */}
-      <Card className="p-6 border-l-4 border-orange-600 bg-orange-50 dark:bg-orange-950 shadow-lg mb-10">
-        <div className="flex items-center mb-6">
-          <div className="p-2 rounded-full bg-orange-600 text-white mr-3">
-            <Package className="w-5 h-5" />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+        <Card className="p-8 border-l-4 border-orange-600">
+          <div className="flex items-center mb-6">
+            <div className="p-2 rounded-full bg-orange-600 text-white mr-3">
+              <Package className="w-5 h-5" />
+            </div>
+            <h3 className="text-xl font-medium text-gray-900">Producto Principal</h3>
           </div>
-          <h3 className="text-xl font-bold text-orange-800 dark:text-orange-200">Producto Principal</h3>
-        </div>
-        <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {mainProductItems.map((item, index) => (
-            <FeatureListItem key={index} iconColor="text-orange-600">
-              {item}
-            </FeatureListItem>
-          ))}
-        </CardContent>
-      </Card>
+          <div className="space-y-4">
+            {mainProductItems.map((item, index) => (
+              <div key={index} className="flex items-start">
+                <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
 
-      {/* Bonuses Card */}
-      <Card className="p-6 border-l-4 border-cta-green bg-green-50 dark:bg-green-950 shadow-lg">
-        <div className="flex items-center mb-6">
-          <div className="p-2 rounded-full bg-cta-green text-white mr-3">
-            <Gift className="w-5 h-5" />
+        <Card className="p-8 border-l-4 border-cta-green">
+          <div className="flex items-center mb-6">
+            <div className="p-2 rounded-full bg-cta-green text-white mr-3">
+              <Gift className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-xl font-medium text-gray-900">Bónus y complementos</h3>
+              <p className="text-sm text-gray-500">Incluidos por tiempo limitado</p>
+            </div>
           </div>
-          <div>
-            <h3 className="text-xl font-bold text-cta-green">Bónus y complementos</h3>
-            <p className="text-xs text-gray-600 dark:text-gray-400 bg-red-200 text-red-800 inline-block px-2 py-0.5 rounded mt-1">
-              Incluidos por tiempo limitado
-            </p>
+          <div className="space-y-4">
+            {bonusItems.map((item, index) => (
+              <div key={index} className="flex items-start">
+                <div className="w-2 h-2 bg-cta-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
           </div>
-        </div>
-        <CardContent className="p-0 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {bonusItems.map((item, index) => (
-            <FeatureListItem key={index} iconColor="text-cta-green">
-              {item}
-            </FeatureListItem>
-          ))}
-        </CardContent>
-        
-        {/* Language Note */}
-        <div className="mt-6 p-3 bg-white rounded-lg text-center text-sm text-gray-600 dark:text-gray-400 flex items-center justify-center">
-            <span role="img" aria-label="taco" className="mr-2">🌮</span> Todo el contenido está en <span className="font-bold ml-1">español</span>
-        </div>
-      </Card>
+        </Card>
+      </div>
 
-      <div className="text-center mt-10">
-        <CtaButton className="w-full sm:w-auto">
+      <div className="text-center">
+        <CtaButton className="text-lg px-8 py-4">
           Quiero todo esto ahora (US$ 5,50)
         </CtaButton>
       </div>

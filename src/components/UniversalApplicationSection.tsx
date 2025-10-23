@@ -6,14 +6,14 @@ import { Zap } from 'lucide-react';
 const features = [
   {
     title: "Universal (Todas las Marcas)",
-    description: "Garantizado para Ninja, Philips, Cosori, Oster, Mondial y más. No importa la marca, obtendrás crocancia.",
+    description: "Garantido para Ninja, Philips, Cosori, Oster, Mondial y más. No importa la marca, obtendrás crocancia.",
   },
   {
     title: "Tiempos y Temperaturas Exactas",
     description: "Incluye tablas precisas. Es la guía que tu freidora no trajo. Deja de adivinar.",
   },
   {
-    title: "Ajuste para TODOS los Tamaños (Pequeños o Grandes)",
+    title: "Ajuste para TODOS los Tamaños",
     description: "Te mostramos un ajuste simple para adaptar las recetas a tu cesto (3.5L, 5.5L+).",
   },
   {
@@ -24,32 +24,30 @@ const features = [
 
 const UniversalApplicationSection: React.FC = () => {
   return (
-    <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
+    <SectionWrapper bgColor="white">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           <span className="text-orange-600">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           El Método C.R.I.S.P. funciona con todas las freidoras de aire
         </p>
       </div>
 
-      <div className="space-y-6 max-w-2xl mx-auto">
+      <div className="max-w-3xl mx-auto space-y-6">
         {features.map((feature, index) => (
-          <div key={index} className="p-4 bg-white rounded-lg shadow-md">
-            <FeatureListItem className="text-base" iconColor="text-cta-green">
-              <span className="font-semibold">{feature.title}</span>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{feature.description}</p>
+          <div key={index} className="p-6 border border-gray-200 rounded-lg">
+            <FeatureListItem className="text-base">
+              <span className="font-semibold text-gray-900">{feature.title}</span>
+              <p className="text-gray-600 mt-1">{feature.description}</p>
             </FeatureListItem>
           </div>
         ))}
       </div>
 
-      {/* Compatibility Banner */}
-      <div className="mt-8 p-4 bg-green-100 dark:bg-green-900 rounded-lg text-center max-w-2xl mx-auto">
-        <p className="font-medium text-gray-800 dark:text-gray-200 flex items-center justify-center">
-          <Zap className="w-4 h-4 mr-2 text-red-500" />
-          Compatible con <span className="font-bold mx-1">todas las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más
+      <div className="mt-12 p-6 bg-gray-50 rounded-lg text-center max-w-2xl mx-auto">
+        <p className="text-lg font-medium text-gray-800">
+          Compatible con <span className="font-bold">todas las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más
         </p>
       </div>
     </SectionWrapper>

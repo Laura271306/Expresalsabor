@@ -8,16 +8,16 @@ interface SectionWrapperProps {
 }
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, className, bgColor = 'white' }) => {
-  let backgroundClass = 'bg-white dark:bg-background';
+  let backgroundClass = 'bg-white';
   if (bgColor === 'light-gray') {
-    backgroundClass = 'bg-gray-50 dark:bg-gray-900';
+    backgroundClass = 'bg-gray-50';
   } else if (bgColor === 'light-green') {
-    backgroundClass = 'bg-green-50 dark:bg-green-950';
+    backgroundClass = 'bg-green-50';
   }
 
   return (
-    <section className={cn("py-12 md:py-20", backgroundClass, className)}>
-      <div className="container max-w-4xl mx-auto px-4">
+    <section className={cn("py-16 md:py-24", backgroundClass, className)}>
+      <div className="container max-w-6xl mx-auto px-4">
         {children}
       </div>
     </section>

@@ -11,7 +11,7 @@ const CtaButton: React.FC<CtaButtonProps> = ({ children, className, ...props }) 
   return (
     <Button
       className={cn(
-        "bg-cta-green text-white text-lg md:text-xl font-bold py-7 px-10 rounded-xl shadow-lg hover:bg-cta-green/90 transition-all duration-300",
+        "bg-orange-600 text-white hover:bg-orange-700 transition-colors duration-200",
         className
       )}
       {...props}

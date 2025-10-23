@@ -23,17 +23,17 @@ const placeholderImages = [
 
 const ResultsSection: React.FC = () => {
   return (
-    <SectionWrapper bgColor="light-gray" className="py-16 md:py-24">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
+    <SectionWrapper bgColor="white">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Esto es lo que puedes lograr con tu AirFryer
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Resultados reales, crocancia perfecta en minutos
         </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative max-w-4xl mx-auto mb-12">
         <Carousel className="w-full">
           <CarouselContent>
             {placeholderImages.map((src, index) => (
@@ -62,11 +62,11 @@ const ResultsSection: React.FC = () => {
         </Carousel>
       </div>
       
-      <div className="text-center mt-10">
-        <p className="text-orange-600 font-semibold mb-4">
+      <div className="text-center">
+        <p className="text-orange-600 font-medium mb-6">
           600+ recetas como estas te esperan
         </p>
-        <CtaButton className="w-full sm:w-auto">
+        <CtaButton className="text-lg px-8 py-4">
           Quiero cocinar así (US$ 5,50)
         </CtaButton>
       </div>

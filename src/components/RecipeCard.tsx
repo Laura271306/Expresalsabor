@@ -12,32 +12,31 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperature, details }) => {
   return (
-    <Card className="overflow-hidden shadow-lg transition-shadow hover:shadow-xl">
+    <Card className="overflow-hidden border border-gray-200">
       <div className="relative h-48 w-full">
         <img
           src={imageSrc}
           alt={title}
           className="w-full h-full object-cover"
-          // Placeholder image for now, since I don't have the actual images.
           onError={(e) => {
             e.currentTarget.src = "/placeholder.svg";
             e.currentTarget.alt = "Placeholder image";
           }}
         />
       </div>
-      <CardContent className="p-4 pt-6">
-        <h3 className="text-lg font-semibold mb-2 text-center">{title}</h3>
-        <div className={cn("text-sm text-gray-600 dark:text-gray-400", details ? 'grid grid-cols-2 gap-1' : 'flex justify-center space-x-4')}>
+      <CardContent className="p-4">
+        <h3 className="text-lg font-medium text-gray-900 mb-3 text-center">{title}</h3>
+        <div className={cn("text-sm text-gray-600", details ? 'grid grid-cols-2 gap-2' : 'flex justify-center space-x-4')}>
           <div className={cn(details && 'text-left')}>
             <span className="font-medium">Tiempo:</span> {time}
           </div>
           <div className={cn(details && 'text-right')}>
-            <span className="font-medium">Temperatura:</span> <span className="text-cta-green font-bold">{temperature}</span>
+            <span className="font-medium">Temperatura:</span> <span className="text-orange-600 font-medium">{temperature}</span>
           </div>
         </div>
       </CardContent>
       {details && (
-        <CardFooter className="p-4 pt-0 text-sm text-center text-gray-500 dark:text-gray-400">
+        <CardFooter className="p-4 pt-0 text-sm text-center text-gray-500">
           {details}
         </CardFooter>
       )}

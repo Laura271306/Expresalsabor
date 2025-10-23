@@ -3,28 +3,26 @@ import CtaButton from './CtaButton';
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      {/* Gradient CTA Bar */}
-      <div className="bg-gradient-to-r from-orange-700 via-yellow-700 to-cta-green py-12 text-white text-center">
-        <div className="container max-w-4xl mx-auto px-4">
-          <h3 className="text-2xl md:text-3xl font-bold mb-1">
-            AirFryer Perfecta – Kit Maestro de Recetas
-          </h3>
-          <p className="text-lg mb-2">(Edición Premium)</p>
-          <p className="text-5xl font-extrabold mb-4">
-            US$ 5,50
-          </p>
-          <p className="text-sm mb-6">acceso inmediato</p>
-          
-          <CtaButton className="bg-white text-cta-green hover:bg-gray-100 shadow-none">
-            Sí, quiero cocinar mejor hoy
-          </CtaButton>
-        </div>
+    <footer className="bg-gray-50">
+      <div className="py-16 text-center">
+        <h3 className="text-2xl md:text-3xl font-serif font-light text-gray-900 mb-2">
+          AirFryer Perfecta – Kit Maestro de Recetas
+        </h3>
+        <p className="text-lg mb-2 text-gray-600">(Edición Premium)</p>
+        <p className="text-4xl font-light text-orange-600 mb-6">
+          US$ 5,50
+        </p>
+        <p className="text-gray-500 mb-8">acceso inmediato</p>
+        
+        <CtaButton className="text-lg px-8 py-4 mb-8">
+          Sí, quiero cocinar mejor hoy
+        </CtaButton>
       </div>
 
-      {/* Copyright */}
-      <div className="bg-gray-100 dark:bg-gray-900 py-4 text-center text-sm text-gray-500 dark:text-gray-400">
-        <p>© 2024 AirFryer Perfecta. Todos los derechos reservados.</p>
+      <div className="border-t border-gray-200 py-6 text-center">
+        <p className="text-sm text-gray-500">
+          © 2024 AirFryer Perfecta. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );
