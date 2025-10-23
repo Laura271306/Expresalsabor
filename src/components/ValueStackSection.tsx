@@ -47,12 +47,12 @@ const ValueStackSection: React.FC = () => {
                   {valueItems.map((item, index) => (
                     <tr key={index} className="border-b border-gray-100 last:border-b-0">
                       <td className="py-3 text-lg text-gray-600">{item.label}</td>
-                      <td className="py-3 text-right text-lg font-medium text-gray-800">US$ {item.value}</td>
+                      <td className="py-3 text-right text-lg font-medium text-red-700">US$ {item.value}</td>
                     </tr>
                   ))}
                   <tr className="border-t border-gray-300 mt-2">
                     <td className="py-4 font-bold text-xl text-gray-800">Valor total:</td>
-                    <td className="py-4 text-right font-bold text-xl text-gray-800">US$ {totalValue}</td>
+                    <td className="py-4 text-right font-bold text-xl text-red-700">US$ {totalValue}</td>
                   </tr>
                   <tr className="bg-brand-light/50">
                     <td className="py-4 font-extrabold text-2xl text-brand-primary">Precio Hoy:</td>
