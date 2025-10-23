@@ -10,10 +10,12 @@ import FinalCtaCardSection from "@/components/FinalCtaCardSection";
 import RiskFreeGuaranteeSection from "@/components/RiskFreeGuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
+import TopBanner from "@/components/TopBanner";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <TopBanner />
       <main className="flex-grow">
         <HeroSection />
         <ResultsSection />

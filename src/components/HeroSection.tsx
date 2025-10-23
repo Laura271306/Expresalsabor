@@ -8,13 +8,7 @@ const HeroSection: React.FC = () => {
     <section className="bg-white dark:bg-gray-50 pt-12 pb-20">
       <div className="container max-w-6xl mx-auto px-6 text-center">
         
-        {/* New header/banner */}
-        <div 
-          className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-6 text-gray-800" 
-          style={{ backgroundColor: '#A9CCB9' }}
-        >
-          Aprobado por principiantes, resultados perfectos desde el primer uso.
-        </div>
+        {/* Removed the banner here */}
 
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-6 leading-tight">
