@@ -29,11 +29,11 @@ const SavingsSection: React.FC = () => {
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-3 text-gray-600">Kit Maestro AirFryer Perfecta (único pago)</td>
-                <td className="py-3 text-right font-bold text-red-600">US$ 5,50</td>
+                <td className="py-3 text-right font-bold" style={{ color: '#e58634' }}>US$ 5,50</td>
               </tr>
               <tr>
                 <td className="py-3 font-bold text-gray-800">Ahorro estimado (primer mes)</td>
-                <td className="py-3 text-right font-bold text-cta-green">US$ 90–114</td>
+                <td className="py-3 text-right font-bold" style={{ color: '#657a38' }}>US$ 90–114</td>
               </tr>
             </tbody>
           </table>
@@ -42,7 +42,7 @@ const SavingsSection: React.FC = () => {
 
       <div className="text-center mb-12">
         <p className="text-lg text-gray-600 flex items-center justify-center">
-          <Zap className="w-5 h-5 mr-2 text-yellow-500" />
+          <Zap className="w-5 h-5 mr-2" style={{ color: '#fcbf6b' }} />
           Si pides 2 veces/semana (US$ 12–15 por pedido), el kit se paga en el primer día.
         </p>
       </div>

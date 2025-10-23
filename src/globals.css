@@ -49,6 +49,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Novas cores personalizadas */
+    --color1: #fcbf6b;
+    --color2: #e58634;
+    --color3: #657a38;
+    --color4: #afab50;
+    --color5: #a9ccb9;
   }
 
   .dark {

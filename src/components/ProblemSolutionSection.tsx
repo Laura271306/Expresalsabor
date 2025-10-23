@@ -115,7 +115,7 @@ const ProblemSolutionSection: React.FC = () => {
           ¿Por qué esto funciona cuando otras recetas fallan?
         </h2>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-          Aplicamos el <span className="font-bold text-orange-600">Sistema C.R.I.S.P.</span>:
+          Aplicamos el <span className="font-bold" style={{ color: '#e58634' }}>Sistema C.R.I.S.P.</span>:
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
@@ -125,9 +125,9 @@ const ProblemSolutionSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-6 bg-green-50 border border-green-200 rounded-lg text-center max-w-2xl mx-auto">
+      <div className="p-6 border border-green-200 rounded-lg text-center max-w-2xl mx-auto" style={{ backgroundColor: '#a9ccb9' }}>
         <p className="text-lg font-medium text-gray-800">
-          Resultado: platos listos en <span className="text-orange-600 font-bold">10–15 min</span>, incluso si eres principiante.
+          Resultado: platos listos en <span className="font-bold" style={{ color: '#e58634' }}>10–15 min</span>, incluso si eres principiante.
         </p>
       </div>
     </SectionWrapper>

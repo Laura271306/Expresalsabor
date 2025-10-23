@@ -27,7 +27,7 @@ const UniversalApplicationSection: React.FC = () => {
     <SectionWrapper bgColor="white">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
-          <span className="text-orange-600">¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
+          <span style={{ color: '#e58634' }}>¿Tienes dudas? Funciona con CUALQUIER Air Fryer.</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           El Método C.R.I.S.P. funciona con todas las freidoras de aire
@@ -45,7 +45,7 @@ const UniversalApplicationSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-12 p-6 bg-gray-50 rounded-lg text-center max-w-2xl mx-auto">
+      <div className="mt-12 p-6 rounded-lg text-center max-w-2xl mx-auto" style={{ backgroundColor: '#fcbf6b' }}>
         <p className="text-lg font-medium text-gray-800">
           Compatible con <span className="font-bold">todas las marcas:</span> Philips, Ninja, Cosori, Instant Pot y más
         </p>

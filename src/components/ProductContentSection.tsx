@@ -42,9 +42,9 @@ const ProductContentSection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-        <Card className="p-8 border-l-4 border-orange-600">
+        <Card className="p-8 border-l-4" style={{ borderColor: '#e58634' }}>
           <div className="flex items-center mb-6">
-            <div className="p-2 rounded-full bg-orange-600 text-white mr-3">
+            <div className="p-2 rounded-full text-white mr-3" style={{ backgroundColor: '#e58634' }}>
               <Package className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-medium text-gray-900">Producto Principal</h3>
@@ -52,16 +52,16 @@ const ProductContentSection: React.FC = () => {
           <div className="space-y-4">
             {mainProductItems.map((item, index) => (
               <div key={index} className="flex items-start">
-                <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: '#e58634' }}></div>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}
           </div>
         </Card>
 
-        <Card className="p-8 border-l-4 border-cta-green">
+        <Card className="p-8 border-l-4" style={{ borderColor: '#657a38' }}>
           <div className="flex items-center mb-6">
-            <div className="p-2 rounded-full bg-cta-green text-white mr-3">
+            <div className="p-2 rounded-full text-white mr-3" style={{ backgroundColor: '#657a38' }}>
               <Gift className="w-5 h-5" />
             </div>
             <div>
@@ -72,7 +72,7 @@ const ProductContentSection: React.FC = () => {
           <div className="space-y-4">
             {bonusItems.map((item, index) => (
               <div key={index} className="flex items-start">
-                <div className="w-2 h-2 bg-cta-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: '#657a38' }}></div>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}

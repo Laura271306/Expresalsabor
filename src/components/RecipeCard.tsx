@@ -31,7 +31,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperat
             <span className="font-medium">Tiempo:</span> {time}
           </div>
           <div className={cn(details && 'text-right')}>
-            <span className="font-medium">Temperatura:</span> <span className="text-orange-600 font-medium">{temperature}</span>
+            <span className="font-medium">Temperatura:</span> <span style={{ color: '#e58634' }} className="font-medium">{temperature}</span>
           </div>
         </div>
       </CardContent>

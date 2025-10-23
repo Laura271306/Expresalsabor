@@ -8,10 +8,10 @@ interface FeatureListItemProps {
   iconColor?: string;
 }
 
-const FeatureListItem: React.FC<FeatureListItemProps> = ({ children, className, iconColor = 'text-orange-600' }) => {
+const FeatureListItem: React.FC<FeatureListItemProps> = ({ children, className, iconColor = '#657a38' }) => {
   return (
     <div className={cn("flex items-start space-x-3", className)}>
-      <CheckCircle className={cn("w-5 h-5 flex-shrink-0 mt-0.5", iconColor)} />
+      <CheckCircle className={cn("w-5 h-5 flex-shrink-0 mt-0.5")} style={{ color: iconColor }} />
       <p className="text-gray-700">{children}</p>
     </div>
   );

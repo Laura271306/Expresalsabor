@@ -12,7 +12,7 @@ const CrispStep: React.FC<CrispStepProps> = ({ icon, title, description }) => {
   return (
     <Card className="p-6 text-center border border-gray-200">
       <div className="flex justify-center mb-4">
-        <div className="p-3 rounded-full bg-orange-100 text-orange-600">
+        <div className="p-3 rounded-full text-orange-600" style={{ backgroundColor: '#fcbf6b' }}>
           {icon}
         </div>
       </div>

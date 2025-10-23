@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="text-lg text-gray-700 mb-8">
-            <span className="font-bold text-orange-600">600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
+            <span className="font-bold" style={{ color: '#e58634' }}>600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
           </div>
         </div>
 
