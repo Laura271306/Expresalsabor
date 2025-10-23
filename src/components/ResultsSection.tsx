@@ -1,27 +1,24 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
-import RecipeCard from './RecipeCard';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Card, CardContent } from '@/components/ui/card';
 import CtaButton from './CtaButton';
 
-const recipes = [
-  {
-    title: "Alitas de pollo crujientes",
-    time: "12 min",
-    temperature: "190°C",
-    imageSrc: "/placeholder.svg",
-  },
-  {
-    title: "Papas fritas perfectas",
-    time: "15 min",
-    temperature: "200°C",
-    imageSrc: "/placeholder.svg",
-  },
-  {
-    title: "Salmón con costra dorada",
-    time: "10 min",
-    temperature: "180°C",
-    imageSrc: "/placeholder.svg",
-  },
+const placeholderImages = [
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
+  "/placeholder.svg",
 ];
 
 const ResultsSection: React.FC = () => {
@@ -36,10 +33,33 @@ const ResultsSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {recipes.map((recipe, index) => (
-          <RecipeCard key={index} {...recipe} />
-        ))}
+      <div className="relative max-w-4xl mx-auto">
+        <Carousel className="w-full">
+          <CarouselContent>
+            {placeholderImages.map((src, index) => (
+              <CarouselItem 
+                key={index} 
+                className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/7"
+              >
+                <Card className="border-0 shadow-none">
+                  <CardContent className="p-2">
+                    <img
+                      src={src}
+                      alt={`Receta ${index + 1}`}
+                      className="w-full h-48 object-cover rounded-lg"
+                      onError={(e) => {
+                        e.currentTarget.src = "/placeholder.svg";
+                        e.currentTarget.alt = "Placeholder image";
+                      }}
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/100 border border-gray-200 dark:border-gray-800 rounded-full p-2 hidden md:block" />
+          <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/100 border border-gray-200 dark:border-gray-800 rounded-full p-2 hidden md:block" />
+        </Carousel>
       </div>
       
       <div className="text-center mt-10">
