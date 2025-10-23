@@ -5,10 +5,10 @@ import { cn } from '@/lib/utils';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-50 pt-16 pb-24">
-      <div className="container max-w-4xl mx-auto px-4 text-center">
-        <div className="mb-10">
-          <h1 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6 leading-tight">
+    <section className="bg-white dark:bg-gray-50 pt-12 pb-20">
+      <div className="container max-w-6xl mx-auto px-6 text-center">
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-900 mb-6 leading-tight">
             <span 
               className="relative inline-block font-bold"
               style={{ 
@@ -20,13 +20,13 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto">
             El secreto para usar bien tu AirFryer (y no fallar más)
           </p>
         </div>
 
-        <div className="mb-12">
-          <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center mb-6">
+        <div className="mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 items-center justify-center mb-4">
             <FeatureListItem className="text-base">
               <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
             </FeatureListItem>
@@ -38,25 +38,25 @@ const HeroSection: React.FC = () => {
             </FeatureListItem>
           </div>
           
-          <div className="text-lg text-gray-700 mb-8">
+          <div className="text-lg md:text-xl text-gray-700 mb-6">
             <span className="font-bold" style={{ color: '#e58634' }}>600+ recetas</span> AirFryer por objetivo. Cero ensayo-error desde el día 1.
           </div>
         </div>
 
-        <div className="mb-10">
-          <CtaButton className="text-lg px-8 py-4">
+        <div className="mb-6">
+          <CtaButton className="text-lg px-10 py-5 text-xl">
             Quiero crocancia hoy (US$ 5,50)
           </CtaButton>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-sm text-gray-500 mt-2">
             <span style={{ color: '#8B0000' }}>*Oferta válida por tiempo limitado</span>
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-8">
           <img
             src="/hero-kit-mockup-recortado.jpg"
             alt="AirFryer Recipe Book"
-            className="w-full max-w-md mx-auto rounded-lg shadow-md text-center"
+            className="w-full max-w-lg mx-auto rounded-lg shadow-md text-center"
           />
         </div>
       </div>
