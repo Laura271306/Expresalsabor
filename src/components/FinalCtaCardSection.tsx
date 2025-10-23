@@ -21,7 +21,7 @@ const FinalCtaCardSection: React.FC = () => {
           Acceso inmediato y actualizaciones del kit.
         </p>
         
-        <CtaButton className="text-2xl px-12 py-6 font-extrabold mb-8">
+        <CtaButton className="text-2xl w-full py-6 font-extrabold mb-8">
           Quiero mis recetas ahora (US$ 5,50)
         </CtaButton>
 
