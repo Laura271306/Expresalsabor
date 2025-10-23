@@ -6,21 +6,21 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Package, Gift } from 'lucide-react';
 
 const mainProductItems = [
-  "Coleção “Fundamentos + Guías Prácticas da Airfryer”",
-  "Coleção “Receitas Rápidas & Do Dia a Dia” (variadas)",
+  "Colección \"Fundamentos + Guías Prácticas de la Airfryer\"",
+  "Colección \"Recetas Rápidas & Del Día a Día\" (variadas)",
   "365 recetas en tu freidora de aire",
-  "Coleção “Proteínas & Comidas para a Familia”",
-  "Coleção “Veggie, Fit & Sem Glúten” (opções saudáveis)",
+  "Colección \"Proteínas & Comidas para la Familia\"",
+  "Colección \"Veggie, Fit & Sin Gluten\" (opciones saludables)",
   "15 Postres Fit",
-  "Coleção “Postres & Snacks”",
+  "Colección \"Postres & Snacks\"",
 ];
 
 const bonusItems = [
-  "Checklist “10 Errores que arruinan tus recetas en la Airfryer”",
+  "Checklist \"10 Errores que arruinan tus recetas en la Airfryer\"",
   "15 Postres Fit — dulce sin culpa",
   "Calendario sencillo de cocina (30 días)",
   "Guía de Compras Inteligentes / Economía mensual",
-  "Guía Exprés: Limpieza e Manutenção",
+  "Guía Exprés: Limpieza y Mantenimiento",
   "Mis mejores recetas en freidora de aire",
   "Receta de la Freidora de Aire / Air Fryer Cookbook",
   "Libro de cocina AirFryer",
@@ -65,9 +65,9 @@ const ProductContentSection: React.FC = () => {
             <Gift className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-cta-green">Bônus e complementos</h3>
+            <h3 className="text-xl font-bold text-cta-green">Bónus y complementos</h3>
             <p className="text-xs text-gray-600 dark:text-gray-400 bg-red-200 text-red-800 inline-block px-2 py-0.5 rounded mt-1">
-              Incluídos por tiempo limitado
+              Incluidos por tiempo limitado
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ const valueItems = [
   { label: "Menús + listas", value: 17 },
   { label: "Tablas", value: 12 },
   { label: "Guía de limpieza", value: 7 },
-  { label: "Bonos (4)", value: 39 },
+  { label: "Bónus (4)", value: 39 },
 ];
 
 const ValueStackSection: React.FC = () => {
