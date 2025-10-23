@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6 leading-tight">
             <span 
-              className="relative inline-block"
+              className="relative inline-block font-bold"
               style={{ 
                 color: '#e58634',
                 textShadow: '2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(229, 134, 52, 0.2)'
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/hero-kit-mockup-recortado.jpg"
             alt="AirFryer Recipe Book"
-            className="w-full max-w-md mx-auto rounded-lg shadow-md"
+            className="w-full max-w-md mx-auto rounded-lg shadow-md text-center"
           />
         </div>
       </div>
