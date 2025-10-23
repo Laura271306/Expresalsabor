@@ -6,13 +6,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Package, Gift } from 'lucide-react';
 
 const mainProductItems = [
-  "Colección \"Fundamentos + Guías Prácticas de la Airfryer\"",
-  "Colección \"Recetas Rápidas & Del Día a Día\" (variadas)",
-  "365 recetas en tu freidora de aire",
-  "Colección \"Proteínas & Comidas para la Familia\"",
-  "Colección \"Veggie, Fit & Sin Gluten\" (opções saudáveis)",
-  "15 Postres Fit",
-  "Colección \"Postres & Snacks\"",
+  "650 Recetas para AirFryer",
+  "365 Recetas en tu Freidora de Aire",
+  "Freidora de aire: 300 recetas sanas y sabrosas que se preparan en 5 minutos (Tamara Chelo)",
+  "100 Deliciosas Recetas para Freidora de Aire",
+  "Libro de Cocina de la Freidora de Aire (Diana Watson)",
+  "Receta de la Freidora de Aire en Español (Charlie Mason)",
+  "El libro de cocina de la freidora de aire (Maurice Fitzgerald)",
 ];
 
 const bonusItems = [
