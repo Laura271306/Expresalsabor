@@ -60,6 +60,14 @@ const testimonials = [
   }
 ];
 
+const StarRating: React.FC = () => (
+  <div className="flex justify-center mb-3">
+    {[...Array(5)].map((_, i) => (
+      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+    ))}
+  </div>
+);
+
 const ProblemSolutionSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray"> {/* Alterado para light-gray */}
@@ -88,11 +96,12 @@ const ProblemSolutionSection: React.FC = () => {
       {/* Testimonial Section - Increased prominence */}
       <div className="mb-16 md:mb-20 p-8 rounded-xl bg-brand-success-bg shadow-inner">
         <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-10">
-          ⭐ Lo que dicen nuestros clientes
+          Lo que dicen nuestros clientes
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white shadow-lg">
+              <StarRating /> {/* Adicionando as 5 estrelas */}
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.avatar}
