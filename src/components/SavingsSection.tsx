@@ -59,7 +59,7 @@ const SavingsSection: React.FC = () => {
       </div>
 
       <div className="text-center mb-10">
-        <p className="text-xl md:text-2xl text-gray-700 flex items-center justify-center font-bold p-6 bg-brand-light/50 rounded-lg max-w-3xl mx-auto">
+        <p className="text-2xl md:text-3xl text-gray-700 flex items-center justify-center font-bold p-6 bg-brand-light/50 rounded-lg max-w-3xl mx-auto">
           <Zap className="w-6 h-6 mr-2 text-brand-primary flex-shrink-0" />
           Si pides 2 veces/semana (US$ 12–15 por pedido), el kit se paga en el primer día.
         </p>
