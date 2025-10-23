@@ -2,6 +2,7 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
 import CtaButton from './CtaButton';
+import { cn } from '@/lib/utils';
 
 const valueItems = [
   { label: "Colecciones (4)", value: 28 },
@@ -52,7 +53,11 @@ const ValueStackSection: React.FC = () => {
                   ))}
                   <tr className="border-t border-gray-300 mt-2">
                     <td className="py-4 font-bold text-xl text-gray-800">Valor total:</td>
-                    <td className="py-4 text-right font-bold text-xl text-red-700">US$ {totalValue}</td>
+                    <td className="py-4 text-right">
+                      <span className={cn("text-4xl font-extrabold line-through text-gray-500")}>
+                        US$ {totalValue}
+                      </span>
+                    </td>
                   </tr>
                   <tr className="bg-brand-light/50">
                     <td className="py-4 font-extrabold text-2xl text-brand-primary">Precio Hoy:</td>
