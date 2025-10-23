@@ -82,7 +82,7 @@ const ProductContentSection: React.FC = () => {
 
       <div className="text-center">
         <CtaButton className="text-lg px-8 py-4">
-          Quiero todo esto ahora (US$ 5,50)
+          Comprar ahora
         </CtaButton>
       </div>
     </SectionWrapper>

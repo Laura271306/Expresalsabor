@@ -30,7 +30,7 @@ const ValueStackSection: React.FC = () => {
           
           <div className="text-center lg:text-left">
             <CtaButton className="text-xl px-10 py-5">
-              Quiero ahorrar hoy (US$ 5,50)
+              Comprar ahora
             </CtaButton>
           </div>
         </div>

@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-6">
           {/* Aumentando o tamanho do botão para 2xl e padding vertical para py-6 */}
           <CtaButton className="text-2xl px-12 py-6 font-extrabold">
-            Quiero crocancia hoy (US$ 5,50)
+            Comprar ahora
           </CtaButton>
           <p className="text-sm text-gray-500 mt-2">
             <span className="text-red-700">*Oferta válida por tiempo limitado</span>

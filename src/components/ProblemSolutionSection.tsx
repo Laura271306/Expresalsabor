@@ -77,7 +77,7 @@ const ProblemSolutionSection: React.FC = () => {
         </div>
 
         <CtaButton className="text-xl px-10 py-5">
-          Quiero una solución simple →
+          Comprar ahora
         </CtaButton>
       </div>
 

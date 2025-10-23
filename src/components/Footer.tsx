@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <p className="text-gray-500 mb-8">acceso inmediato</p>
         
         <CtaButton className="text-2xl px-12 py-6 font-extrabold mb-8">
-          Sí, quiero cocinar mejor hoy
+          Comprar ahora
         </CtaButton>
       </div>
 

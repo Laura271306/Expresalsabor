@@ -67,7 +67,7 @@ const ResultsSection: React.FC = () => {
           600+ recetas como estas te esperan
         </p>
         <CtaButton className="text-xl px-10 py-5">
-          Quiero cocinar así (US$ 5,50)
+          Comprar ahora
         </CtaButton>
       </div>
     </SectionWrapper>
