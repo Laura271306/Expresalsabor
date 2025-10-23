@@ -24,7 +24,7 @@ const placeholderImages = [
 const ResultsSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
-      <div className="text-center mb-10"> {/* Reduzindo mb-12 para mb-10 */}
+      <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           Esto es lo que puedes lograr con tu AirFryer
         </h2>
@@ -33,20 +33,20 @@ const ResultsSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto mb-8"> {/* Reduzindo mb-10 para mb-8 */}
+      <div className="relative max-w-6xl mx-auto mb-8"> {/* Aumentando max-w para 6xl */}
         <Carousel className="w-full">
-          <CarouselContent>
+          <CarouselContent className="-ml-2"> {/* Ajustando margem negativa para melhor espaçamento */}
             {placeholderImages.map((src, index) => (
               <CarouselItem 
                 key={index} 
-                className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/7"
+                className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4" // Ajustando a densidade para 2, 3 ou 4 itens
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-2">
                     <img
                       src={src}
                       alt={`Receta ${index + 1}`}
-                      className="w-full h-48 object-cover rounded-lg shadow-md"
+                      className="w-full h-64 object-cover rounded-lg shadow-lg transition-shadow hover:shadow-xl" // Aumentando altura para h-64 e melhorando sombra
                       onError={(e) => {
                         e.currentTarget.src = "/placeholder.svg";
                         e.currentTarget.alt = "Placeholder image";
@@ -63,10 +63,10 @@ const ResultsSection: React.FC = () => {
       </div>
       
       <div className="text-center">
-        <p className="font-medium mb-4 text-xl font-bold text-brand-primary"> {/* Reduzindo mb-6 para mb-4 e text-2xl para text-xl */}
+        <p className="font-medium mb-4 text-xl font-bold text-brand-primary">
           600+ recetas como estas te esperan
         </p>
-        <CtaButton className="text-xl px-10 py-5"> {/* Padronizando para CTA secundário */}
+        <CtaButton className="text-xl px-10 py-5">
           Comprar ahora
         </CtaButton>
       </div>
