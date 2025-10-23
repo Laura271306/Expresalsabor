@@ -18,7 +18,7 @@ const FinalCtaCardSection: React.FC = () => {
           US$ 5,50
         </p>
         <p className="text-gray-600 mb-8 text-xl font-medium">
-          Acceso inmediato y actualizaciones del kit.
+          Acceso inmediato y satisfacción garantizada.
         </p>
         
         <CtaButton className="text-2xl w-full py-6 font-extrabold mb-8">
