@@ -10,7 +10,7 @@ const mainProductItems = [
   "Colección \"Recetas Rápidas & Del Día a Día\" (variadas)",
   "365 recetas en tu freidora de aire",
   "Colección \"Proteínas & Comidas para la Familia\"",
-  "Colección \"Veggie, Fit & Sin Gluten\" (opciones saludables)",
+  "Colección \"Veggie, Fit & Sin Gluten\" (opções saudáveis)",
   "15 Postres Fit",
   "Colección \"Postres & Snacks\"",
 ];
@@ -68,7 +68,7 @@ const ProductContentSection: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-gray-900">Bónus Exclusivos</h3>
-              <p className="text-sm text-gray-500">Incluidos por tiempo limitado</p>
+              <p className="text-sm text-red-700 font-semibold">Incluidos por tiempo limitado</p>
             </div>
           </div>
           <div className="space-y-4">
