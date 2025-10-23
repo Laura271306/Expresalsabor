@@ -8,16 +8,16 @@ const FinalCtaCardSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-serif font-light text-gray-900 mb-4">
-          AirFryer Perfecta – Kit Maestro de Recetas (Edición Premium)
+        <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
+          <span className="font-bold text-brand-secondary">AirFryer Perfecta</span> – Kit Maestro de Recetas (Edición Premium)
         </h2>
       </div>
 
-      <Card className="p-10 md:p-12 max-w-sm mx-auto text-center shadow-xl">
-        <p className="text-5xl font-light mb-6 text-brand-primary">
+      <Card className="p-10 md:p-12 max-w-lg mx-auto text-center shadow-xl border-2 border-brand-primary/50">
+        <p className="text-6xl font-extrabold mb-6 text-brand-primary">
           US$ 5,50
         </p>
-        <p className="text-gray-600 mb-8 text-lg">
+        <p className="text-gray-600 mb-8 text-xl font-medium">
           Acceso inmediato y actualizaciones del kit.
         </p>
         
