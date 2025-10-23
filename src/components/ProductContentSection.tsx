@@ -8,11 +8,11 @@ import { Package, Gift } from 'lucide-react';
 const mainProductItems = [
   "650 Recetas para AirFryer",
   "365 Recetas en tu Freidora de Aire",
-  "Freidora de aire: 300 recetas sanas y sabrosas que se preparan en 5 minutos (Tamara Chelo)",
+  "Freidora de aire: 300 recetas sanas y sabrosas que se preparan en 5 minutos",
   "100 Deliciosas Recetas para Freidora de Aire",
-  "Libro de Cocina de la Freidora de Aire (Diana Watson)",
-  "Receta de la Freidora de Aire en Español (Charlie Mason)",
-  "El libro de cocina de la freidora de aire (Maurice Fitzgerald)",
+  "Libro de Cocina de la Freidora de Aire",
+  "Receta de la Freidora de Aire en Español",
+  "El libro de cocina de la freidora de aire",
 ];
 
 const bonusItems = [
