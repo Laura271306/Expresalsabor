@@ -13,6 +13,10 @@ import airfryer7 from '@/assets/airfryer7.jpg';
 import airfryer8 from '@/assets/airfryer8.jpg';
 import airfryer9 from '@/assets/airfryer9.jpg';
 import airfryer10 from '@/assets/airfryer10.jpg';
+import airfryer11 from '@/assets/airfryer11.jpg';
+import airfryer12 from '@/assets/airfryer12.jpg';
+import airfryer13 from '@/assets/airfryer13.jpg';
+import airfryer14 from '@/assets/airfryer14.jpg';
 
 const recipeImages = [
   airfryer1,
@@ -25,6 +29,10 @@ const recipeImages = [
   airfryer8,
   airfryer9,
   airfryer10,
+  airfryer11,
+  airfryer12,
+  airfryer13,
+  airfryer14,
 ];
 
 const ResultsSection: React.FC = () => {
