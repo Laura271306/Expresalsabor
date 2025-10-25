@@ -3,22 +3,28 @@ import SectionWrapper from './SectionWrapper';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from '@/components/ui/card';
 import CtaButton from './CtaButton';
+import airfryer1 from '@/assets/airfryer1.jpg';
+import airfryer2 from '@/assets/airfryer2.jpg';
+import airfryer3 from '@/assets/airfryer3.jpg';
+import airfryer4 from '@/assets/airfryer4.jpg';
+import airfryer5 from '@/assets/airfryer5.jpg';
+import airfryer6 from '@/assets/airfryer6.jpg';
+import airfryer7 from '@/assets/airfryer7.jpg';
+import airfryer8 from '@/assets/airfryer8.jpg';
+import airfryer9 from '@/assets/airfryer9.jpg';
+import airfryer10 from '@/assets/airfryer10.jpg';
 
-const placeholderImages = [
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
+const recipeImages = [
+  airfryer1,
+  airfryer2,
+  airfryer3,
+  airfryer4,
+  airfryer5,
+  airfryer6,
+  airfryer7,
+  airfryer8,
+  airfryer9,
+  airfryer10,
 ];
 
 const ResultsSection: React.FC = () => {
@@ -36,7 +42,7 @@ const ResultsSection: React.FC = () => {
       <div className="relative max-w-6xl mx-auto mb-8"> {/* Aumentando max-w para 6xl */}
         <Carousel className="w-full">
           <CarouselContent className="-ml-2"> {/* Ajustando margem negativa para melhor espaçamento */}
-            {placeholderImages.map((src, index) => (
+            {recipeImages.map((src, index) => (
               <CarouselItem 
                 key={index} 
                 className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4" // Ajustando a densidade para 2, 3 ou 4 itens
