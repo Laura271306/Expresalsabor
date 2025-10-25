@@ -2,6 +2,7 @@ import React from 'react';
 import CtaButton from './CtaButton';
 import FeatureListItem from './FeatureListItem';
 import { cn } from '@/lib/utils';
+import heroImage from '@/assets/hero-kit-mockup-recortado.jpg';
 
 const HeroSection: React.FC = () => {
   return (
@@ -62,7 +63,7 @@ const HeroSection: React.FC = () => {
           {/* Coluna da Imagem */}
           <div className="mt-6 lg:mt-0 flex justify-center lg:justify-end">
             <img
-              src="/hero-kit-mockup-recortado.jpg"
+              src={heroImage}
               alt="AirFryer Recipe Book"
               className="w-full max-w-md mx-auto lg:mx-0 rounded-lg shadow-2xl shadow-brand-primary/50"
             />
