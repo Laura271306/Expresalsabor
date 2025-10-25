@@ -3,6 +3,7 @@ import SectionWrapper from './SectionWrapper';
 import RecipeCard from './RecipeCard';
 import CtaButton from './CtaButton';
 import polloParmesanoImg from '@/assets/recipe-pollo-parmesano.jpg';
+import camaronesAjoImg from '@/assets/recipe-camarones-ajo.jpg';
 
 const detailedRecipes = [
   {
@@ -17,7 +18,7 @@ const detailedRecipes = [
     time: "8 min",
     temperature: "180°C",
     details: "listo en una sola vez",
-    imageSrc: "/placeholder.svg",
+    imageSrc: camaronesAjoImg,
   },
   {
     title: "Chips de batata",
