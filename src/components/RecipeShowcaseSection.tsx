@@ -4,6 +4,7 @@ import RecipeCard from './RecipeCard';
 import CtaButton from './CtaButton';
 import polloParmesanoImg from '@/assets/recipe-pollo-parmesano.jpg';
 import camaronesAjoImg from '@/assets/recipe-camarones-ajo.jpg';
+import chipsBatataImg from '@/assets/recipe-chips-batata.jpg';
 
 const detailedRecipes = [
   {
@@ -25,7 +26,7 @@ const detailedRecipes = [
     time: "10–12 min",
     temperature: "200°C",
     details: "agitar a mitad",
-    imageSrc: "/placeholder.svg",
+    imageSrc: chipsBatataImg,
   },
 ];
 
