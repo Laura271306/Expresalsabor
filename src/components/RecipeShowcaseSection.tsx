@@ -2,6 +2,7 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import RecipeCard from './RecipeCard';
 import CtaButton from './CtaButton';
+import polloParmesanoImg from '@/assets/recipe-pollo-parmesano.jpg';
 
 const detailedRecipes = [
   {
@@ -9,7 +10,7 @@ const detailedRecipes = [
     time: "12 min",
     temperature: "190°C",
     details: "voltear a mitad",
-    imageSrc: "/placeholder.svg",
+    imageSrc: polloParmesanoImg,
   },
   {
     title: "Camarones al ajo",
