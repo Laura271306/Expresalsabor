@@ -9,20 +9,11 @@ const HeroSection: React.FC = () => {
     <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16">
       <div className="container max-w-6xl mx-auto px-6">
         
-        {/* Layout de Duas Colunas: Foto à Esquerda, Conteúdo à Direita */}
+        {/* Layout de Duas Colunas: Conteúdo à Esquerda, Foto à Direita */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
-          {/* Coluna da Imagem - À ESQUERDA */}
-          <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
-            <img
-              src={heroImage}
-              alt="AirFryer Recipe Book"
-              className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
-            />
-          </div>
-
-          {/* Coluna de Conteúdo - À DIREITA */}
-          <div className="order-1 lg:order-2 text-center lg:text-left">
+          {/* Coluna de Conteúdo - À ESQUERDA */}
+          <div className="order-1 lg:order-1 text-center lg:text-left">
             
             {/* Título Principal */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light text-gray-900 leading-tight mb-6">
@@ -68,6 +59,15 @@ const HeroSection: React.FC = () => {
                 <span className="text-red-700">*Oferta válida por tiempo limitado</span>
               </p>
             </div>
+          </div>
+
+          {/* Coluna da Imagem - À DIREITA */}
+          <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
+            <img
+              src={heroImage}
+              alt="AirFryer Recipe Book"
+              className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
+            />
           </div>
 
         </div>
