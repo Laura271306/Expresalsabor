@@ -3,6 +3,9 @@ import SectionWrapper from './SectionWrapper';
 import CtaButton from './CtaButton';
 import CrispStep from './CrispStep';
 import { Utensils, Clock, ShoppingCart, Star, Thermometer, XCircle } from 'lucide-react';
+import avatarSofia from '@/assets/avatar-sofia.jpg';
+import avatarJavier from '@/assets/avatar-javier.jpg';
+import avatarIsabella from '@/assets/avatar-isabella.jpg';
 
 const problems = [
   "Mi AirFryer deja la comida blanda o seca.",
@@ -52,19 +55,19 @@ const testimonials = [
     name: "Sofía L.",
     country: "México 🇲🇽",
     text: "¡Salvó mis cenas entre semana! Mi freidora de aire era solo para papas fritas congeladas. Intenté hacer otras cosas, pero siempre quedaban secas o blandas. Como mamá de dos niños, no tengo tiempo para experimentar y fallar. Este recetario cambió todo. Ahora hago pollo jugoso, vegetales crujientes y hasta postres en menos de 20 minutos. ¡Mi familia está comiendo más sano y delicioso que nunca!",
-    avatar: "/placeholder.svg"
+    avatar: avatarSofia
   },
   {
     name: "Javier R.",
     country: "Colombia 🇨🇴",
     text: "Pensé que mi freidora no servía, ¡el que no servía era yo! Estaba a punto de regalar mi Air Fryer. Todo lo que cocinaba era un desastre. Compré este ebook sin mucha fe y ¡wow! El problema no era el aparato, era que no tenía idea de los tiempos y temperaturas. Las instrucciones son súper fáciles de seguir, a prueba de tontos. La semana pasada hice unas alitas de pollo que quedaron mejores que las de mi restaurante favorito.",
-    avatar: "/placeholder.svg"
+    avatar: avatarJavier
   },
   {
     name: "Isabella G.",
     country: "Chile 🇨🇱",
     text: "Mucho más que solo papas fritas. Compré la Air Fryer para comer más saludable, pero estaba aburrida de comer siempre lo mismo. Expres al Sabor me abrió un mundo de posibilidades. He probado recetas de pescado, panes, quiches y hasta el pack sin gluten es fantástico. Las recetas son sabrosas y para nada aburridas. Por fin estoy usando mi freidora todos los días y disfrutando mi comida.",
-    avatar: "/placeholder.svg"
+    avatar: avatarIsabella
   }
 ];
 
@@ -106,11 +109,7 @@ const ProblemSolutionSection: React.FC = () => {
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-10 h-10 rounded-full mr-3"
-                  onError={(e) => {
-                    e.currentTarget.src = "/placeholder.svg";
-                    e.currentTarget.alt = "Avatar placeholder";
-                  }}
+                  className="w-10 h-10 rounded-full mr-3 object-cover"
                 />
                 <div>
                   <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
