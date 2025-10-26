@@ -6,7 +6,7 @@ import { Zap } from 'lucide-react';
 const features = [
   {
     title: "Universal (Todas las Marcas)",
-    description: "Garantido para Ninja, Philips, Cosori, Oster, Mondial y más. No importa la marca, obtendrás crocancia.",
+    description: "Garantizado para Ninja, Philips, Cosori, Oster, Mondial y más. No importa la marca, obtendrás crocancia.",
   },
   {
     title: "Tiempos y Temperaturas Exactas",

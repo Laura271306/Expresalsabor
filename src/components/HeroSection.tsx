@@ -42,10 +42,10 @@ const HeroSection: React.FC = () => {
                   <span className="font-medium">Verás tiempos/temperaturas claros en cada receta</span>
                 </FeatureListItem>
                 <FeatureListItem className="text-base">
-                  <span className="font-medium">Menos decisiones: menús e listas de compras</span>
+                  <span className="font-medium">Menos decisiones: menús y listas de compras</span>
                 </FeatureListItem>
                 <FeatureListItem className="text-base">
-                  <span className="font-medium">Acesso Imediato • Garantía 7 días</span>
+                  <span className="font-medium">Acceso Inmediato • Garantía 7 días</span>
                 </FeatureListItem>
               </div>
             </div>
