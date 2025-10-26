@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import ResultsSection from "@/components/ResultsSection";
+import TaglineSection from "@/components/TaglineSection";
 import ProblemSolutionSection from "@/components/ProblemSolutionSection";
 import RecipeShowcaseSection from "@/components/RecipeShowcaseSection";
 import SavingsSection from "@/components/SavingsSection";
@@ -20,6 +21,7 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <ResultsSection />
+        <TaglineSection />
         <ProblemSolutionSection />
         <RecipeShowcaseSection />
         <SavingsSection />
