@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import ResultsSection from "@/components/ResultsSection";
 import TaglineSection from "@/components/TaglineSection";
@@ -15,6 +16,19 @@ import Footer from "@/components/Footer";
 import TopBanner from "@/components/TopBanner";
 
 const Index = () => {
+  useEffect(() => {
+    // Track ViewContent when page loads
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'ViewContent', {
+        content_name: 'Kit Maestro de Recetas AirFryer',
+        content_category: 'Recipe Book',
+        content_type: 'product',
+        value: 6.50,
+        currency: 'USD'
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <TopBanner />
