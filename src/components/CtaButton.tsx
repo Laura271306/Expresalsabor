@@ -17,8 +17,22 @@ const CtaButton: React.FC<CtaButtonProps> = ({
   const handleClick = () => {
     // Facebook Pixel events
     if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'ClickCTA');
-      (window as any).fbq('track', 'InitiateCheckout');
+      try {
+        (window as any).fbq('track', 'InitiateCheckout', {
+          content_name: 'Kit Maestro de Recetas AirFryer',
+          content_category: 'Recipe Book',
+          value: 6.50,
+          currency: 'USD'
+        });
+        (window as any).fbq('track', 'AddToCart', {
+          content_name: 'Kit Maestro de Recetas AirFryer',
+          content_type: 'product',
+          value: 6.50,
+          currency: 'USD'
+        });
+      } catch (error) {
+        console.error('Facebook Pixel error:', error);
+      }
     }
   };
 
