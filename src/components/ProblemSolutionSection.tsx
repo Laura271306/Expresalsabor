@@ -151,24 +151,15 @@ const ProblemSolutionSection: React.FC = () => {
             >
               <StarRating />
               
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-3 object-cover border-2 border-brand-primary"
-                  />
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                      {testimonial.verified && (
-                        <BadgeCheck className="w-4 h-4 text-blue-500 fill-blue-500" />
-                      )}
-                    </div>
-                    <p className="text-xs text-gray-500">{testimonial.location}</p>
-                    <p className="text-xs text-gray-400">{testimonial.date}</p>
-                  </div>
+              <div className="mb-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                  {testimonial.verified && (
+                    <BadgeCheck className="w-4 h-4 text-blue-500 fill-blue-500" />
+                  )}
                 </div>
+                <p className="text-xs text-gray-500">{testimonial.location}</p>
+                <p className="text-xs text-gray-400">{testimonial.date}</p>
               </div>
               
               <div className="mb-3 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
