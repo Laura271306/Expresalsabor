@@ -11,7 +11,7 @@ interface CtaButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 const CtaButton: React.FC<CtaButtonProps> = ({ 
   children, 
   className, 
-  href = "https://pay.hotmart.com/I102633587P",
+  href = "https://pay.hotmart.com/I102633587P?checkoutMode=10",
   ...props 
 }) => {
   const handleClick = () => {
