@@ -1,19 +1,21 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
 import ResultsSection from "@/components/ResultsSection";
 import TaglineSection from "@/components/TaglineSection";
-import ProblemSolutionSection from "@/components/ProblemSolutionSection";
-import RecipeShowcaseSection from "@/components/RecipeShowcaseSection";
-import SavingsSection from "@/components/SavingsSection";
-import ProductContentSection from "@/components/ProductContentSection";
-import UniversalApplicationSection from "@/components/UniversalApplicationSection";
-import ValueStackSection from "@/components/ValueStackSection";
-import FinalCtaCardSection from "@/components/FinalCtaCardSection";
-import RiskFreeGuaranteeSection from "@/components/RiskFreeGuaranteeSection";
-import FaqSection from "@/components/FaqSection";
-import CtaFooterSection from "@/components/CtaFooterSection"; // Importar novo componente
-import Footer from "@/components/Footer";
 import TopBanner from "@/components/TopBanner";
+import Footer from "@/components/Footer";
+
+// Lazy load components below the fold
+const ProblemSolutionSection = lazy(() => import("@/components/ProblemSolutionSection"));
+const RecipeShowcaseSection = lazy(() => import("@/components/RecipeShowcaseSection"));
+const SavingsSection = lazy(() => import("@/components/SavingsSection"));
+const ProductContentSection = lazy(() => import("@/components/ProductContentSection"));
+const UniversalApplicationSection = lazy(() => import("@/components/UniversalApplicationSection"));
+const ValueStackSection = lazy(() => import("@/components/ValueStackSection"));
+const FinalCtaCardSection = lazy(() => import("@/components/FinalCtaCardSection"));
+const RiskFreeGuaranteeSection = lazy(() => import("@/components/RiskFreeGuaranteeSection"));
+const FaqSection = lazy(() => import("@/components/FaqSection"));
+const CtaFooterSection = lazy(() => import("@/components/CtaFooterSection"));
 
 const Index = () => {
   useEffect(() => {
@@ -36,16 +38,18 @@ const Index = () => {
         <HeroSection />
         <ResultsSection />
         <TaglineSection />
-        <ProblemSolutionSection />
-        <RecipeShowcaseSection />
-        <SavingsSection />
-        <ProductContentSection />
-        <UniversalApplicationSection />
-        <ValueStackSection />
-        <FinalCtaCardSection />
-        <RiskFreeGuaranteeSection />
-        <FaqSection />
-        <CtaFooterSection /> {/* Adicionar o novo CTA */}
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <ProblemSolutionSection />
+          <RecipeShowcaseSection />
+          <SavingsSection />
+          <ProductContentSection />
+          <UniversalApplicationSection />
+          <ValueStackSection />
+          <FinalCtaCardSection />
+          <RiskFreeGuaranteeSection />
+          <FaqSection />
+          <CtaFooterSection />
+        </Suspense>
       </main>
       <Footer />
     </div>

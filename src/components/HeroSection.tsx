@@ -67,6 +67,10 @@ const HeroSection: React.FC = () => {
               src={heroImage}
               alt="AirFryer Recipe Book"
               className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
+              loading="eager"
+              fetchPriority="high"
+              width="448"
+              height="600"
             />
           </div>
 

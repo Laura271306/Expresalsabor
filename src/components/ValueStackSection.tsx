@@ -47,21 +47,19 @@ const ValueStackSection: React.FC = () => {
                 <tbody>
                   {valueItems.map((item, index) => (
                     <tr key={index} className="border-b border-gray-100 last:border-b-0">
-                      <td className="py-3 text-lg text-gray-600">{item.label}</td> {/* Aumentando py para 3 */}
-                      <td className="py-3 text-right text-lg font-medium text-red-700">US$ {item.value}</td> {/* Aumentando py para 3 */}
+                      <td className="py-3 text-lg text-gray-600">{item.label}</td>
+                      <td className="py-3 text-right text-lg font-medium text-red-700">US$ {item.value}</td>
                     </tr>
                   ))}
                   <tr className="border-t-2 border-gray-300 mt-2">
                     <td className="py-3 font-bold text-xl text-gray-800">Valor total:</td>
                     <td className="py-3 text-right">
-                      <span className={cn("text-3xl font-extrabold line-through text-gray-500")}>
-                        US$ {totalValue}
-                      </span>
+                      <span className={cn("text-3xl font-extrabold line-through text-gray-500")}>US$ {totalValue}</span>
                     </td>
                   </tr>
-                  <tr className="bg-brand-secondary/10"> {/* Usando cor secundária para fundo */}
-                    <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td> {/* Aumentando py para 4 */}
-                    <td className="py-4 text-right font-extrabold text-4xl text-brand-primary">US$ 6,50</td> {/* Aumentando py para 4 e usando brand-primary para o preço */}
+                  <tr className="bg-brand-secondary/10">
+                    <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td>
+                    <td className="py-4 text-right font-extrabold text-4xl text-brand-primary">US$ 6,50</td>
                   </tr>
                 </tbody>
               </table>

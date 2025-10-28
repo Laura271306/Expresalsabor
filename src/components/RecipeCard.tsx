@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
@@ -10,7 +10,7 @@ interface RecipeCardProps {
   details?: string;
 }
 
-const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperature, details }) => {
+const RecipeCard: React.FC<RecipeCardProps> = memo(({ imageSrc, title, time, temperature, details }) => {
   return (
     <Card className="overflow-hidden border border-gray-200 shadow-sm">
       <div className="relative h-48 w-full">
@@ -18,6 +18,9 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperat
           src={imageSrc}
           alt={title}
           className="w-full h-full object-cover"
+          loading="lazy"
+          width="400"
+          height="192"
           onError={(e) => {
             e.currentTarget.src = "/placeholder.svg";
             e.currentTarget.alt = "Placeholder image";
@@ -42,6 +45,8 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ imageSrc, title, time, temperat
       )}
     </Card>
   );
-};
+});
+
+RecipeCard.displayName = 'RecipeCard';
 
 export default RecipeCard;
