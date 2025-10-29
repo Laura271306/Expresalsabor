@@ -26,7 +26,7 @@ const ValueStackSection: React.FC = () => {
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 mb-6">
             ahorras <span className="font-extrabold text-brand-secondary">US$ 80–120/mes.</span> 
-            <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 6,50</span> y se paga hoy.
+            <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 5,50</span> y se paga hoy.
           </p>
           
           <div className="text-center lg:text-left">
@@ -59,7 +59,7 @@ const ValueStackSection: React.FC = () => {
                   </tr>
                   <tr className="bg-brand-secondary/10">
                     <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td>
-                    <td className="py-4 text-right font-extrabold text-4xl text-brand-primary">US$ 6,50</td>
+                    <td className="py-4 text-right font-extrabold text-4xl text-brand-primary">US$ 5,50</td>
                   </tr>
                 </tbody>
               </table>

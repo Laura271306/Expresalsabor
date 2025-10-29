@@ -39,7 +39,7 @@ const SavingsSection: React.FC = () => {
           </div>
           <p className="text-gray-700 mb-2 text-center text-base">Kit Maestro Expres al Sabor (pago único)</p>
           <p className="text-6xl font-extrabold text-brand-secondary text-center mt-4">
-            US$ 6,50
+            US$ 5,50
           </p>
           <p className="text-sm text-gray-600 mt-1 text-center">Acceso inmediato</p>
         </Card>

@@ -25,7 +25,7 @@ const Index = () => {
         content_name: 'Kit Maestro de Recetas AirFryer',
         content_category: 'Recipe Book',
         content_type: 'product',
-        value: 6.50,
+        value: 5.50,
         currency: 'USD'
       });
     }
