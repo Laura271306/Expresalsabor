@@ -107,11 +107,6 @@
     @apply bg-background text-foreground;
   }
   
-  /* Performance optimizations */
-  img {
-    content-visibility: auto;
-  }
-  
   /* Reduce motion for users who prefer it */
   @media (prefers-reduced-motion: reduce) {
     *,
