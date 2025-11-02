@@ -7,7 +7,7 @@ import { Zap, DollarSign, TrendingUp } from 'lucide-react';
 const SavingsSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="light-gray">
-      <div className="text-center mb-12">
+      <div id="savings-section" className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
           El kit se paga solo en el primer día
         </h2>
