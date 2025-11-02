@@ -14,6 +14,7 @@ const UniversalApplicationSection = lazy(() => import("@/components/UniversalApp
 const ValueStackSection = lazy(() => import("@/components/ValueStackSection"));
 const FinalCtaCardSection = lazy(() => import("@/components/FinalCtaCardSection"));
 const RiskFreeGuaranteeSection = lazy(() => import("@/components/RiskFreeGuaranteeSection"));
+const NoRegretSection = lazy(() => import("@/components/NoRegretSection"));
 const FaqSection = lazy(() => import("@/components/FaqSection"));
 const CtaFooterSection = lazy(() => import("@/components/CtaFooterSection"));
 
@@ -47,6 +48,7 @@ const Index = () => {
           <ValueStackSection />
           <FinalCtaCardSection />
           <RiskFreeGuaranteeSection />
+          <NoRegretSection />
           <FaqSection />
           <CtaFooterSection />
         </Suspense>
