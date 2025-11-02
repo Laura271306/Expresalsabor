@@ -8,7 +8,7 @@ const CtaFooterSection: React.FC = () => {
     <SectionWrapper bgColor="light-gray" className="py-10 md:py-12 border-t border-gray-200">
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-6">
-          <span className="font-bold text-brand-secondary">Listo para transformar tu Air Fryer?</span>
+          <span className="font-bold text-brand-secondary">¿Listo para transformar tu Air Fryer?</span>
         </h2>
         <CtaButton 
           className={cn(
