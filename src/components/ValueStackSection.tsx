@@ -24,11 +24,17 @@ const ValueStackSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-900 mb-4">
             Con 2 pedidos de delivery menos por semana
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 mb-6">
+          <p className="text-xl md:text-2xl text-gray-600 mb-4">
             ahorras <span className="font-extrabold text-brand-secondary">US$ 80–120/mes.</span> 
             <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 5,50</span> y se paga hoy.
           </p>
           
+          <div className="mb-4 p-3 bg-red-50 border-2 border-red-700 rounded-lg">
+            <p className="text-base md:text-lg font-bold text-red-700 text-center lg:text-left">
+              ⏰ Precio promocional válido solo hoy
+            </p>
+          </div>
+
           <div className="text-center lg:text-left">
             <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
               Comprar ahora

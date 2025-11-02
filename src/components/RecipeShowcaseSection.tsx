@@ -42,13 +42,16 @@ const RecipeShowcaseSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10"> {/* Reduzindo mb-12 para mb-10 */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"> {/* Reduzindo mb-12 para mb-10 */}
         {detailedRecipes.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} details={recipe.details} />
         ))}
       </div>
-      
-      <div className="text-center">
+
+      <div className="text-center mb-6">
+        <p className="text-lg font-bold text-red-700 mb-4">
+          ⚡ Oferta válida por tiempo limitado • Solo hoy: US$ 5,50
+        </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>

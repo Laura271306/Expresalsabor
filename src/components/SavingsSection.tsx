@@ -66,6 +66,9 @@ const SavingsSection: React.FC = () => {
       </div>
 
       <div className="text-center mt-8">
+        <p className="text-xl font-extrabold text-red-700 mb-4">
+          🔥 OFERTA ESPECIAL • Válida solo por 24 horas
+        </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
           Comprar ahora
         </CtaButton>

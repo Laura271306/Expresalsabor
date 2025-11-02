@@ -14,6 +14,12 @@ const FinalCtaCardSection: React.FC = () => {
       </div>
 
       <Card className="p-8 md:p-10 max-w-lg mx-auto text-center shadow-xl border-2 border-brand-primary/50"> {/* Reduzindo padding */}
+        <div className="mb-4 p-2 bg-red-700 rounded-lg">
+          <p className="text-sm font-bold text-white">
+            🔥 ÚLTIMA OPORTUNIDAD • Oferta válida solo hoy
+          </p>
+        </div>
+
         <p className="text-5xl md:text-6xl font-extrabold mb-4 text-brand-primary"> {/* Reduzindo mb-6 para mb-4 */}
           US$ 5,50
         </p>
