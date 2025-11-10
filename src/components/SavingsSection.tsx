@@ -32,7 +32,7 @@ const SavingsSection: React.FC = () => {
         </Card>
 
         {/* Coluna 2: Preço do Kit (Destaque) */}
-        <Card className="p-6 shadow-2xl border-4 border-brand-primary bg-brand-light/50 transform scale-105">
+        <Card className="p-6 shadow-2xl border-4 border-brand-primary bg-white transform scale-105">
           <div className="flex items-center justify-center mb-4">
             <Zap className="w-7 h-7 mr-3 text-brand-primary fill-brand-primary/20" />
             <h3 className="text-2xl font-extrabold text-brand-primary">Precio Hoy</h3>
