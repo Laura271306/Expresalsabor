@@ -19,6 +19,7 @@ const RecipeCard: React.FC<RecipeCardProps> = memo(({ imageSrc, title, time, tem
           alt={title}
           className="w-full h-full object-cover"
           loading="lazy"
+          decoding="async"
           width="400"
           height="192"
           onError={(e) => {

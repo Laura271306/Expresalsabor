@@ -60,7 +60,10 @@ const ResultsSection: React.FC = () => {
                     <img
                       src={src}
                       alt={`Receta ${index + 1}`}
-                      className="w-full h-64 object-cover rounded-lg shadow-lg transition-shadow hover:shadow-xl" // Aumentando altura para h-64 e melhorando sombra
+                      className="w-full h-64 object-cover rounded-lg shadow-lg transition-shadow hover:shadow-xl"
+                      loading="lazy"
+                      width="300"
+                      height="256"
                       onError={(e) => {
                         e.currentTarget.src = "/placeholder.svg";
                         e.currentTarget.alt = "Placeholder image";
