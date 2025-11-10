@@ -16,10 +16,10 @@ const HeroSection: React.FC = () => {
           <div className="order-1 lg:order-1 text-center lg:text-left">
             
             {/* Título Principal */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light text-gray-900 leading-tight mb-6">
-              <span className="font-bold text-[var(--color2)]">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light leading-tight mb-6">
+              <span className="font-bold text-brand-primary">
                 La solución definitiva para activar el{' '}
-                <span className="text-red-700">"Modo Chef"</span>
+                "Modo Chef"
                 <br className="hidden lg:block" />
                 de tu freidora de aire
               </span>
