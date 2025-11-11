@@ -67,10 +67,8 @@ export default {
         'brand-secondary': 'hsl(var(--color3))', // Verde oliva escuro/Secundário
         'brand-light': 'hsl(var(--color1))', // Laranja claro/Amarelo
         'brand-success-bg': 'hsl(var(--color5))', // Verde menta claro/Fundo sutil
-        'cta-green': {
-          DEFAULT: 'rgb(102, 153, 0)', // Keeping old definition for safety, but using brand-secondary in components
-          dark: 'rgb(85, 128, 0)', 
-        },
+        'alert-danger': 'hsl(var(--alert-danger))', // Vermelho para alertas/urgência
+        'alert-danger-foreground': 'hsl(var(--alert-danger-fg))',
       },
       borderRadius: {
         lg: "var(--radius)",

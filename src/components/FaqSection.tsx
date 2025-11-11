@@ -43,19 +43,23 @@ const FaqSection: React.FC = () => {
         </h2>
       </div>
 
-      <div className="max-w-3xl mx-auto">
-        {faqs.map((faq, index) => (
-          <Accordion key={index} type="single" collapsible className="mb-3">
-            <AccordionItem value={`item-${index}`} className="border border-gray-200 rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-gray-900 hover:no-underline">
+      <div className="max-w-3xl mx-auto" role="region" aria-label="Preguntas frecuentes sobre el Kit Maestro">
+        <Accordion type="single" collapsible className="space-y-3">
+          {faqs.map((faq, index) => (
+            <AccordionItem 
+              key={index} 
+              value={`item-${index}`} 
+              className="border border-border rounded-lg bg-card"
+            >
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-foreground hover:no-underline hover:bg-muted/50 rounded-lg transition-colors">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-gray-600 text-base">
+              <AccordionContent className="px-6 pb-4 text-muted-foreground text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
+          ))}
+        </Accordion>
       </div>
     </SectionWrapper>
   );

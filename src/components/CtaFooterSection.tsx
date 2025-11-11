@@ -12,13 +12,14 @@ const CtaFooterSection: React.FC = () => {
         </h2>
         <CtaButton 
           className={cn(
-            // Custom style for 'vermelho vinho' button
-            "bg-red-700 hover:bg-red-800 transition-colors duration-200"
+            // Custom style usando design system
+            "bg-alert-danger hover:bg-alert-danger/90 transition-colors duration-200"
           )}
+          aria-label="Empezar ahora - Comprar Kit Maestro con acceso inmediato y garantía de 7 días"
         >
           Empezar ahora
         </CtaButton>
-        <p className="text-base text-gray-500 mt-3"> {/* Aumentando text-sm para text-base */}
+        <p className="text-base text-muted-foreground mt-3">
           Acceso inmediato. Garantía de 7 días.
         </p>
       </div>

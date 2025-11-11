@@ -57,6 +57,10 @@
     --color3: 86 35% 34%; /* #657a38 - Verde oliva escuro/Secundário */
     --color4: 56 37% 50%; /* #afab50 - Verde amarelado */
     --color5: 149 30% 73%; /* #a9ccb9 - Verde menta claro */
+    
+    /* Alert/CTA colors */
+    --alert-danger: 0 84% 45%; /* Vermelho intenso para alertas */
+    --alert-danger-fg: 0 0% 100%; /* Texto branco em alertas */
   }
 
   .dark {
@@ -122,6 +126,29 @@
   /* Optimize animations */
   * {
     will-change: auto;
+  }
+
+  /* Accessible focus styles */
+  *:focus-visible {
+    outline: 3px solid hsl(var(--color2));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Skip to main content link for accessibility */
+  .skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: hsl(var(--color2));
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+  }
+
+  .skip-to-main:focus {
+    top: 0;
   }
 
   /* Reduce motion for users who prefer it */

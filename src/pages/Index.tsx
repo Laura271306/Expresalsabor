@@ -38,8 +38,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <a href="#main-content" className="skip-to-main">Saltar al contenido principal</a>
       <TopBanner />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         <HeroSection />
         <ResultsSection />
         <TaglineSection />

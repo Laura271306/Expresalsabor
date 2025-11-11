@@ -6,7 +6,7 @@ import heroImage from '@/assets/hero-kit-mockup-recortado.jpg';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16">
+    <section className="bg-background dark:bg-gray-50 pt-10 pb-12 md:pt-12 md:pb-16" aria-label="Sección principal del Kit Maestro">
       <div className="container max-w-6xl mx-auto px-6">
         
         {/* Layout de Duas Colunas: Conteúdo à Esquerda, Foto à Direita */}
@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light leading-tight mb-6">
               <span className="font-bold text-brand-primary">
                 La solución definitiva para activar el{' '}
-                <span className="text-red-700">"Modo Chef"</span>
+                <span className="text-alert-danger">"Modo Chef"</span>
                 <br className="hidden lg:block" />
                 de tu freidora de aire
               </span>
@@ -55,8 +55,8 @@ const HeroSection: React.FC = () => {
               <CtaButton scrollTo="savings-section">
                 Comprar ahora
               </CtaButton>
-              <p className="text-sm text-gray-500 mt-2">
-                <span className="text-red-700">*Oferta válida por tiempo limitado</span>
+              <p className="text-sm text-muted-foreground mt-2">
+                <span className="text-alert-danger font-semibold">*Oferta válida por tiempo limitado</span>
               </p>
             </div>
           </div>
@@ -65,8 +65,8 @@ const HeroSection: React.FC = () => {
           <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
             <img
               src={heroImage}
-              alt="Kit completo de recetas AirFryer con 600+ recetas profesionales"
-              className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
+              alt="Kit completo de recetas AirFryer con 600+ recetas profesionales - Libro digital con tiempos y temperaturas exactos"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
               loading="eager"
               fetchPriority="high"
               decoding="sync"

@@ -6,7 +6,8 @@ interface CtaButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   className?: string;
   href?: string;
-  scrollTo?: string; // ID da seção para scroll suave
+  scrollTo?: string;
+  'aria-label'?: string;
 }
 
 const CtaButton: React.FC<CtaButtonProps> = ({ 
@@ -14,8 +15,14 @@ const CtaButton: React.FC<CtaButtonProps> = ({
   className, 
   href = "https://pay.hotmart.com/I102633587P?checkoutMode=10",
   scrollTo,
+  'aria-label': ariaLabel,
   ...props 
 }) => {
+  // Gera aria-label descritivo se não fornecido
+  const defaultAriaLabel = scrollTo 
+    ? `Ver sección ${scrollTo}` 
+    : "Comprar Kit Maestro de Recetas AirFryer por US$ 5,50 - Acceso inmediato";
+    
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // Se for scroll anchor, previne comportamento padrão e faz scroll suave
     if (scrollTo) {
@@ -40,9 +47,14 @@ const CtaButton: React.FC<CtaButtonProps> = ({
       target={scrollTo ? undefined : "_blank"}
       rel={scrollTo ? undefined : "noopener noreferrer"}
       onClick={handleClick}
+      aria-label={ariaLabel || defaultAriaLabel}
       className={cn(
-        // Aumentando o padding base e garantindo font-extrabold
-        "inline-block bg-brand-secondary text-white hover:bg-brand-secondary/90 transition-colors duration-200 text-3xl font-extrabold py-7 px-14 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-[1.02] text-center no-underline", // Aumentado para text-3xl, py-7, px-14
+        // Responsivo: menor no mobile, maior no desktop
+        "inline-block bg-brand-secondary text-alert-danger-foreground hover:bg-brand-secondary/90 transition-colors duration-200",
+        "text-xl md:text-2xl lg:text-3xl font-extrabold",
+        "py-4 px-8 md:py-6 md:px-12 lg:py-7 lg:px-14",
+        "rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-[1.02]",
+        "text-center no-underline focus:outline-none focus:ring-4 focus:ring-brand-primary/50",
         className
       )}
       {...props}

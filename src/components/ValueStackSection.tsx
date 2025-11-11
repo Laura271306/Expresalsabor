@@ -29,8 +29,8 @@ const ValueStackSection: React.FC = () => {
             <br className="hidden md:inline"/> El kit cuesta <span className="font-extrabold text-brand-primary">US$ 5,50</span> y se paga hoy.
           </p>
           
-          <div className="mb-4 p-3 bg-red-50 border-2 border-red-700 rounded-lg">
-            <p className="text-base md:text-lg font-bold text-red-700 text-center lg:text-left">
+          <div className="mb-4 p-3 bg-red-50 border-2 border-alert-danger rounded-lg">
+            <p className="text-base md:text-lg font-bold text-alert-danger text-center lg:text-left">
               ⏰ Precio promocional válido solo hoy
             </p>
           </div>
@@ -44,31 +44,28 @@ const ValueStackSection: React.FC = () => {
 
         {/* Coluna do Card de Valor (Direita) - Destaque Aumentado */}
         <div className="flex justify-center lg:justify-start">
-          <Card className="p-6 w-full max-w-md shadow-2xl border-4 border-brand-primary bg-white"> {/* Aumentando borda e sombra */}
+          <Card className="p-6 w-full max-w-md shadow-2xl border-4 border-brand-primary bg-card">
             <CardContent className="p-0">
-              <h3 className="text-center font-extrabold text-2xl text-gray-800 mb-4 p-2 bg-brand-light/50 rounded-t-lg -mx-6 -mt-6">
+              <h3 className="text-center font-extrabold text-2xl text-foreground mb-4 p-2 bg-brand-light/50 rounded-t-lg -mx-6 -mt-6">
                 Stack de Valor Total
               </h3>
-              <table className="w-full text-left">
-                <tbody>
-                  {valueItems.map((item, index) => (
-                    <tr key={index} className="border-b border-gray-100 last:border-b-0">
-                      <td className="py-3 text-lg text-gray-600">{item.label}</td>
-                      <td className="py-3 text-right text-lg font-medium text-red-700">US$ {item.value}</td>
-                    </tr>
-                  ))}
-                  <tr className="border-t-2 border-gray-300 mt-2">
-                    <td className="py-3 font-bold text-xl text-gray-800">Valor total:</td>
-                    <td className="py-3 text-right">
-                      <span className={cn("text-3xl font-extrabold line-through text-gray-500")}>US$ {totalValue}</span>
-                    </td>
-                  </tr>
-                  <tr className="bg-brand-secondary/10">
-                    <td className="py-4 font-extrabold text-2xl text-brand-secondary">Precio Hoy:</td>
-                    <td className="py-4 text-right font-extrabold text-4xl text-brand-primary">US$ 5,50</td>
-                  </tr>
-                </tbody>
-              </table>
+              {/* Lista responsiva em vez de tabela */}
+              <div className="space-y-3">
+                {valueItems.map((item, index) => (
+                  <div key={index} className="flex justify-between items-center py-3 border-b border-border last:border-b-0">
+                    <span className="text-base md:text-lg text-muted-foreground">{item.label}</span>
+                    <span className="text-base md:text-lg font-medium text-alert-danger">US$ {item.value}</span>
+                  </div>
+                ))}
+                <div className="flex justify-between items-center py-3 border-t-2 border-border mt-2">
+                  <span className="font-bold text-lg md:text-xl text-foreground">Valor total:</span>
+                  <span className={cn("text-2xl md:text-3xl font-extrabold line-through text-muted-foreground")}>US$ {totalValue}</span>
+                </div>
+                <div className="flex justify-between items-center py-4 bg-brand-secondary/10 rounded-lg px-4 -mx-4">
+                  <span className="font-extrabold text-xl md:text-2xl text-brand-secondary">Precio Hoy:</span>
+                  <span className="font-extrabold text-3xl md:text-4xl text-brand-primary">US$ 5,50</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
