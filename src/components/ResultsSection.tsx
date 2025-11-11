@@ -62,6 +62,7 @@ const ResultsSection: React.FC = () => {
                       alt={`Receta ${index + 1}`}
                       className="w-full h-64 object-cover rounded-lg shadow-lg transition-shadow hover:shadow-xl"
                       loading="lazy"
+                      decoding="async"
                       width="300"
                       height="256"
                       onError={(e) => {

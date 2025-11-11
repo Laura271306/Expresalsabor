@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => ({
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-toast'],
+          'carousel': ['embla-carousel-react'],
         },
       },
     },
@@ -31,7 +32,14 @@ export default defineConfig(({ mode }) => ({
     terserOptions: {
       compress: {
         drop_console: mode === 'production',
+        drop_debugger: mode === 'production',
+        pure_funcs: mode === 'production' ? ['console.log', 'console.info'] : [],
+      },
+      format: {
+        comments: false,
       },
     },
+    chunkSizeWarningLimit: 1000,
+    reportCompressedSize: false,
   },
 }));

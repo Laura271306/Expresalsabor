@@ -5,18 +5,18 @@ import TaglineSection from "@/components/TaglineSection";
 import TopBanner from "@/components/TopBanner";
 import Footer from "@/components/Footer";
 
-// Lazy load components below the fold
-const ProblemSolutionSection = lazy(() => import("@/components/ProblemSolutionSection"));
-const RecipeShowcaseSection = lazy(() => import("@/components/RecipeShowcaseSection"));
-const SavingsSection = lazy(() => import("@/components/SavingsSection"));
-const ProductContentSection = lazy(() => import("@/components/ProductContentSection"));
-const UniversalApplicationSection = lazy(() => import("@/components/UniversalApplicationSection"));
-const ValueStackSection = lazy(() => import("@/components/ValueStackSection"));
-const FinalCtaCardSection = lazy(() => import("@/components/FinalCtaCardSection"));
-const RiskFreeGuaranteeSection = lazy(() => import("@/components/RiskFreeGuaranteeSection"));
-const NoRegretSection = lazy(() => import("@/components/NoRegretSection"));
-const FaqSection = lazy(() => import("@/components/FaqSection"));
-const CtaFooterSection = lazy(() => import("@/components/CtaFooterSection"));
+// Lazy load components below the fold with prefetch hints
+const ProblemSolutionSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ProblemSolutionSection"));
+const RecipeShowcaseSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/RecipeShowcaseSection"));
+const SavingsSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/SavingsSection"));
+const ProductContentSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ProductContentSection"));
+const UniversalApplicationSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/UniversalApplicationSection"));
+const ValueStackSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ValueStackSection"));
+const FinalCtaCardSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/FinalCtaCardSection"));
+const RiskFreeGuaranteeSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/RiskFreeGuaranteeSection"));
+const NoRegretSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/NoRegretSection"));
+const FaqSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/FaqSection"));
+const CtaFooterSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/CtaFooterSection"));
 
 const Index = () => {
   useEffect(() => {

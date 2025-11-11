@@ -69,6 +69,7 @@ const HeroSection: React.FC = () => {
               className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
               loading="eager"
               fetchPriority="high"
+              decoding="sync"
               width="448"
               height="600"
             />
