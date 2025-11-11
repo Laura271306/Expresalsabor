@@ -47,13 +47,14 @@ const ResultsSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="relative max-w-6xl mx-auto mb-8"> {/* Aumentando max-w para 6xl */}
-        <Carousel className="w-full">
+      <div className="relative max-w-6xl mx-auto mb-8" style={{ contain: 'layout' }}>
+        <Carousel className="w-full" style={{ willChange: 'transform' }}>
           <CarouselContent className="-ml-2"> {/* Ajustando margem negativa para melhor espaçamento */}
             {recipeImages.map((src, index) => (
               <CarouselItem 
                 key={index} 
-                className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4" // Ajustando a densidade para 2, 3 ou 4 itens
+                className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4"
+                style={{ willChange: 'transform' }}
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-2">

@@ -107,6 +107,16 @@
     @apply bg-background text-foreground;
   }
   
+  /* Performance optimizations to reduce forced reflows */
+  img {
+    content-visibility: auto;
+  }
+
+  /* Optimize carousel performance */
+  [data-radix-scroll-area-viewport] {
+    contain: layout style paint;
+  }
+
   /* Reduce motion for users who prefer it */
   @media (prefers-reduced-motion: reduce) {
     *,
