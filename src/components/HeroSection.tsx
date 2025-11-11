@@ -65,14 +65,13 @@ const HeroSection: React.FC = () => {
           <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
             <img
               src={heroImage}
-              alt="Kit completo de recetas AirFryer con 600+ recetas profesionales"
+              alt="AirFryer Recipe Book"
               className="w-full max-w-md rounded-lg shadow-2xl shadow-brand-primary/50"
               loading="eager"
               fetchPriority="high"
               decoding="sync"
               width="448"
               height="600"
-              style={{ contentVisibility: 'auto' }}
             />
           </div>
 
