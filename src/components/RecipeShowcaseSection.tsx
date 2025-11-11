@@ -49,7 +49,7 @@ const RecipeShowcaseSection: React.FC = () => {
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-lg md:text-xl font-extrabold text-alert-danger mb-4">
+        <p className="text-lg font-bold text-red-700 mb-4">
           ⚡ Oferta válida por tiempo limitado • Solo hoy: US$ 5,50
         </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
