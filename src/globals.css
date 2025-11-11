@@ -112,9 +112,16 @@
     content-visibility: auto;
   }
 
-  /* Optimize carousel performance */
-  [data-radix-scroll-area-viewport] {
+  /* Optimize carousel and UI components performance */
+  [data-radix-scroll-area-viewport],
+  [data-radix-accordion-content],
+  [data-radix-collapsible-content] {
     contain: layout style paint;
+  }
+
+  /* Optimize animations */
+  * {
+    will-change: auto;
   }
 
   /* Reduce motion for users who prefer it */

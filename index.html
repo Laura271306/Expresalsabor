@@ -11,18 +11,36 @@
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
     <link rel="preload" as="image" href="/src/assets/hero-kit-mockup-recortado.jpg" fetchpriority="high" />
     
-    <!-- Facebook Pixel Code -->
-    <script defer>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '3222655657903008');
-      fbq('track', 'PageView');
+    <!-- Critical CSS inline for faster FCP -->
+    <style>
+      body{margin:0;font-family:system-ui,-apple-system,sans-serif}
+      .min-h-screen{min-height:100vh}
+      .flex{display:flex}
+      .flex-col{flex-direction:column}
+      .flex-grow{flex-grow:1}
+    </style>
+    
+    <!-- Facebook Pixel Code - Non-blocking -->
+    <script>
+      window.fbAsyncInit = function() {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3222655657903008');
+        fbq('track', 'PageView');
+      };
+      
+      // Load Facebook Pixel after page load
+      if (document.readyState === 'complete') {
+        window.fbAsyncInit();
+      } else {
+        window.addEventListener('load', window.fbAsyncInit);
+      }
     </script>
     <!-- End Facebook Pixel Code -->
   </head>
