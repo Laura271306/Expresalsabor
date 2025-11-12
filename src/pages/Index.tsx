@@ -31,17 +31,23 @@ const LazySection = ({ children, threshold = 0.1 }: { children: React.ReactNode;
           observer.disconnect();
         }
       },
-      { rootMargin: '50px', threshold }
+      { rootMargin: '100px', threshold }
     );
 
     if (ref.current) {
       observer.observe(ref.current);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    };
   }, [threshold]);
 
-  return <div ref={ref}>{isVisible ? children : <SkeletonLoader />}</div>;
+  return (
+    <div ref={ref} style={{ minHeight: isVisible ? 'auto' : '400px' }}>
+      {isVisible ? children : <SkeletonLoader />}
+    </div>
+  );
 };
 
 const Index = () => {
@@ -49,13 +55,17 @@ const Index = () => {
     // Delay Facebook Pixel to not block initial render
     const timer = setTimeout(() => {
       if (typeof window !== 'undefined' && (window as any).fbq) {
-        (window as any).fbq('track', 'ViewContent', {
-          content_name: 'Kit Maestro de Recetas AirFryer',
-          content_category: 'Recipe Book',
-          content_type: 'product',
-          value: 5.50,
-          currency: 'USD'
-        });
+        try {
+          (window as any).fbq('track', 'ViewContent', {
+            content_name: 'Kit Maestro de Recetas AirFryer',
+            content_category: 'Recipe Book',
+            content_type: 'product',
+            value: 5.50,
+            currency: 'USD'
+          });
+        } catch (error) {
+          console.error('Facebook Pixel error:', error);
+        }
       }
     }, 100);
 
