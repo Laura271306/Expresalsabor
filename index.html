@@ -1,28 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Kit Maestro de Recetas AirFryer</title>
     <meta name="description" content="600+ recetas para tu Air Fryer con tiempos y temperaturas claros. Cero ensayo-error desde el día 1." />
     
-    <!-- Performance optimizations -->
+    <!-- Critical performance optimizations for LATAM/4G -->
     <link rel="preconnect" href="https://connect.facebook.net" crossorigin />
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
     <link rel="preload" as="image" href="/src/assets/hero-kit-mockup-recortado.jpg" fetchpriority="high" />
     
-    <!-- Facebook Pixel Code -->
-    <script defer>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '3222655657903008');
-      fbq('track', 'PageView');
+    <!-- Inline critical CSS for instant render -->
+    <style>
+      *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}#root{min-height:100vh}.skeleton{background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);background-size:200% 100%;animation:loading 1.5s infinite}@keyframes loading{0%{background-position:200% 0}to{background-position:-200% 0}}
+    </style>
+    
+    <!-- Facebook Pixel Code - Optimized for slow connections -->
+    <script>
+      window.fbAsyncInit=function(){fbq('init','3222655657903008');fbq('track','PageView')};
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];setTimeout(function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)},3000)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     </script>
     <!-- End Facebook Pixel Code -->
   </head>
