@@ -107,7 +107,7 @@
     @apply bg-background text-foreground;
   }
   
-  /* Performance optimizations to reduce forced reflows */
+  /* Performance optimizations */
   img {
     content-visibility: auto;
   }
@@ -115,6 +115,19 @@
   /* Optimize carousel performance */
   [data-radix-scroll-area-viewport] {
     contain: layout style paint;
+  }
+
+  /* Force GPU acceleration for smooth animations */
+  .animate-pulse {
+    will-change: opacity;
+    transform: translateZ(0);
+  }
+
+  /* Optimize font rendering for LATAM connections */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
   }
 
   /* Reduce motion for users who prefer it */
@@ -125,6 +138,13 @@
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Optimize for low-end devices */
+  @media (max-width: 768px) {
+    * {
       scroll-behavior: auto !important;
     }
   }
