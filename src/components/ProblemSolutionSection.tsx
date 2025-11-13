@@ -101,7 +101,7 @@ const ProblemSolutionSection: React.FC = () => {
         </div>
 
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-          Comprar ahora
+          Sí, quiero resolver esto hoy
         </CtaButton>
       </div>
 

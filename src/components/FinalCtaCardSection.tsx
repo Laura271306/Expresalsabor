@@ -28,7 +28,7 @@ const FinalCtaCardSection: React.FC = () => {
         </p>
         
         <CtaButton className="w-full"> {/* Removendo classes de tamanho, usando o padrão grande e garantindo w-full */}
-          Comprar ahora
+          Sí, quiero mis recetas probadas
         </CtaButton>
 
         <div className="flex justify-center gap-6 text-base text-gray-600 mt-6"> {/* Adicionando mt-6 para espaçamento */}
