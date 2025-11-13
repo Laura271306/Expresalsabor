@@ -53,7 +53,7 @@ const RecipeShowcaseSection: React.FC = () => {
           ⚡ Oferta válida por tiempo limitado • Solo hoy: US$ 5,50
         </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-          Comprar ahora
+          Quiero cocinar esto hoy
         </CtaButton>
       </div>
     </SectionWrapper>

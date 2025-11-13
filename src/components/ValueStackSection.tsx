@@ -37,7 +37,7 @@ const ValueStackSection: React.FC = () => {
 
           <div className="text-center lg:text-left">
             <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-              Comprar ahora
+              Sí, quiero este precio hoy
             </CtaButton>
           </div>
         </div>

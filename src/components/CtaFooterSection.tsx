@@ -16,7 +16,7 @@ const CtaFooterSection: React.FC = () => {
             "bg-red-700 hover:bg-red-800 transition-colors duration-200"
           )}
         >
-          Empezar ahora
+          Empieza hoy
         </CtaButton>
         <p className="text-base text-gray-500 mt-3"> {/* Aumentando text-sm para text-base */}
           Acceso inmediato. Garantía de 7 días.

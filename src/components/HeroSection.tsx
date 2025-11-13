@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
             {/* CTA Button */}
             <div className="mb-6 text-center lg:text-left">
               <CtaButton scrollTo="savings-section">
-                Comprar ahora
+                Quiero cocinar como un chef ahora
               </CtaButton>
               <p className="text-sm text-gray-500 mt-2">
                 <span className="text-red-700">*Oferta válida por tiempo limitado</span>

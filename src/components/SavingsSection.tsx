@@ -70,7 +70,7 @@ const SavingsSection: React.FC = () => {
           🔥 OFERTA ESPECIAL • Válida solo por 24 horas
         </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-          Comprar ahora
+          Sí, quiero ahorrar ahora
         </CtaButton>
       </div>
     </SectionWrapper>

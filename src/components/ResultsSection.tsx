@@ -96,7 +96,7 @@ const ResultsSection: React.FC = () => {
           600+ recetas como estas te esperan
         </p>
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-          Comprar ahora
+          Quiero mis 600+ recetas ahora
         </CtaButton>
       </div>
     </SectionWrapper>

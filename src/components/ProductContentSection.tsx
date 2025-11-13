@@ -78,7 +78,7 @@ const ProductContentSection: React.FC = () => {
 
       <div className="text-center">
         <CtaButton> {/* Removendo classes de tamanho, usando o padrão grande */}
-          Comprar ahora
+          Quiero todo esto ahora
         </CtaButton>
       </div>
     </SectionWrapper>

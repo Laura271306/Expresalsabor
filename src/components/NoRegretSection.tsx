@@ -59,7 +59,7 @@ const NoRegretSection: React.FC = () => {
         </div>
 
         <CtaButton>
-          Comprar ahora sin riesgo
+          Garantizado: quiero mi kit ahora
         </CtaButton>
       </div>
     </SectionWrapper>
