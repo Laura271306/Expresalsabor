@@ -18,10 +18,8 @@ const HeroSection: React.FC = () => {
             {/* Título Principal */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light leading-tight mb-6">
               <span className="font-bold text-brand-primary">
-                La solución definitiva para activar el{' '}
-                <span className="text-red-700">"Modo Chef"</span>
-                <br className="hidden lg:block" />
-                de tu freidora de aire
+                Convierte tu AirFryer en tu arma secreta para cocinar como un chef.{' '}
+                <span className="text-red-700">Sin complicaciones, sin ingredientes raros.</span>
               </span>
             </h1>
 
