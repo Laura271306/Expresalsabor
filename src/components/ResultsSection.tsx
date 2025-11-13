@@ -35,6 +35,13 @@ const recipeImages = [
   airfryer14,
 ];
 
+const recipeCaptions = [
+  "Crujiente por fuera, jugoso por dentro",
+  "Sabor de restaurante, hecho en casa",
+  "Resultados perfectos en solo minutos",
+  "Recetas que sorprenden a toda la familia",
+];
+
 const ResultsSection: React.FC = () => {
   return (
     <SectionWrapper bgColor="white">
@@ -58,6 +65,9 @@ const ResultsSection: React.FC = () => {
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-2">
+                    <p className="text-sm md:text-base font-medium text-brand-primary mb-2 text-center">
+                      {recipeCaptions[index % recipeCaptions.length]}
+                    </p>
                     <img
                       src={src}
                       alt={`Receta ${index + 1}`}
