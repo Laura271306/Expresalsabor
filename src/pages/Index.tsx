@@ -12,6 +12,7 @@ const RecipeShowcaseSection = lazy(() => import(/* webpackPrefetch: true */ "@/c
 const SavingsSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/SavingsSection"));
 const ProductContentSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ProductContentSection"));
 const UniversalApplicationSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/UniversalApplicationSection"));
+const ValueAnchorSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ValueAnchorSection"));
 const ValueStackSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/ValueStackSection"));
 const FinalCtaCardSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/FinalCtaCardSection"));
 const RiskFreeGuaranteeSection = lazy(() => import(/* webpackPrefetch: true */ "@/components/RiskFreeGuaranteeSection"));
@@ -47,6 +48,7 @@ const Index = () => {
           <SavingsSection />
           <ProductContentSection />
           <UniversalApplicationSection />
+          <ValueAnchorSection />
           <ValueStackSection />
           <FinalCtaCardSection />
           <RiskFreeGuaranteeSection />
