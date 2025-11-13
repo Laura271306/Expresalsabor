@@ -1,6 +1,7 @@
 import { useEffect, lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
 import ResultsSection from "@/components/ResultsSection";
+import EmotionalConnectionSection from "@/components/EmotionalConnectionSection";
 import TaglineSection from "@/components/TaglineSection";
 import TopBanner from "@/components/TopBanner";
 import Footer from "@/components/Footer";
@@ -38,6 +39,7 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <ResultsSection />
+        <EmotionalConnectionSection />
         <TaglineSection />
         <Suspense fallback={<div className="min-h-[200px]" />}>
           <ProblemSolutionSection />
